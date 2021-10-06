@@ -141,7 +141,7 @@ namespace PDBApp
             // 
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Location = new System.Drawing.Point(72, 165);
+            this.panel4.Location = new System.Drawing.Point(72, 168);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(354, 48);
             this.panel4.TabIndex = 8;
@@ -196,10 +196,10 @@ namespace PDBApp
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
