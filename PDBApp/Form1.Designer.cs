@@ -41,12 +41,16 @@
             this.button3 = new System.Windows.Forms.Button();
             this.Contabilidad = new System.Windows.Forms.Button();
             this.panelEmpleados = new System.Windows.Forms.Panel();
+            this.bttEDE = new System.Windows.Forms.Button();
+            this.bttRE = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Empleados = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.bttRC = new System.Windows.Forms.Button();
+            this.bttEDC = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelProveedores.SuspendLayout();
             this.panelClientes.SuspendLayout();
@@ -144,6 +148,8 @@
             // panelClientes
             // 
             this.panelClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelClientes.Controls.Add(this.bttEDC);
+            this.panelClientes.Controls.Add(this.bttRC);
             this.panelClientes.Controls.Add(this.button2);
             this.panelClientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelClientes.Location = new System.Drawing.Point(0, 426);
@@ -161,9 +167,9 @@
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button2.Size = new System.Drawing.Size(233, 40);
+            this.button2.Size = new System.Drawing.Size(233, 34);
             this.button2.TabIndex = 0;
-            this.button2.Text = "button2";
+            this.button2.Text = "Consultar datos de clientes";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -234,12 +240,48 @@
             // panelEmpleados
             // 
             this.panelEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelEmpleados.Controls.Add(this.bttEDE);
+            this.panelEmpleados.Controls.Add(this.bttRE);
             this.panelEmpleados.Controls.Add(this.button1);
             this.panelEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelEmpleados.Location = new System.Drawing.Point(0, 116);
             this.panelEmpleados.Name = "panelEmpleados";
             this.panelEmpleados.Size = new System.Drawing.Size(233, 110);
             this.panelEmpleados.TabIndex = 2;
+            // 
+            // bttEDE
+            // 
+            this.bttEDE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bttEDE.FlatAppearance.BorderSize = 0;
+            this.bttEDE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.bttEDE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttEDE.Location = new System.Drawing.Point(0, 79);
+            this.bttEDE.Name = "bttEDE";
+            this.bttEDE.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.bttEDE.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bttEDE.Size = new System.Drawing.Size(233, 31);
+            this.bttEDE.TabIndex = 2;
+            this.bttEDE.Text = "Editar datos de empleados";
+            this.bttEDE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bttEDE.UseVisualStyleBackColor = true;
+            this.bttEDE.Click += new System.EventHandler(this.bttEDE_Click);
+            // 
+            // bttRE
+            // 
+            this.bttRE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bttRE.FlatAppearance.BorderSize = 0;
+            this.bttRE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.bttRE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttRE.Location = new System.Drawing.Point(0, 47);
+            this.bttRE.Name = "bttRE";
+            this.bttRE.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.bttRE.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bttRE.Size = new System.Drawing.Size(233, 32);
+            this.bttRE.TabIndex = 1;
+            this.bttRE.Text = "Registro de empleados";
+            this.bttRE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bttRE.UseVisualStyleBackColor = true;
+            this.bttRE.Click += new System.EventHandler(this.bttRE_Click);
             // 
             // button1
             // 
@@ -251,9 +293,9 @@
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(233, 40);
+            this.button1.Size = new System.Drawing.Size(233, 47);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Consultar datos de empleados";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -317,6 +359,40 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // bttRC
+            // 
+            this.bttRC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bttRC.FlatAppearance.BorderSize = 0;
+            this.bttRC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.bttRC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttRC.Location = new System.Drawing.Point(0, 34);
+            this.bttRC.Name = "bttRC";
+            this.bttRC.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.bttRC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bttRC.Size = new System.Drawing.Size(233, 35);
+            this.bttRC.TabIndex = 1;
+            this.bttRC.Text = "Registro de clientes";
+            this.bttRC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bttRC.UseVisualStyleBackColor = true;
+            this.bttRC.Click += new System.EventHandler(this.bttRC_Click);
+            // 
+            // bttEDC
+            // 
+            this.bttEDC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bttEDC.FlatAppearance.BorderSize = 0;
+            this.bttEDC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.bttEDC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttEDC.Location = new System.Drawing.Point(0, 69);
+            this.bttEDC.Name = "bttEDC";
+            this.bttEDC.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.bttEDC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bttEDC.Size = new System.Drawing.Size(233, 41);
+            this.bttEDC.TabIndex = 2;
+            this.bttEDC.Text = "Editar datos de clientes";
+            this.bttEDC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bttEDC.UseVisualStyleBackColor = true;
+            this.bttEDC.Click += new System.EventHandler(this.bttEDC_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -367,6 +443,10 @@
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button bttEDE;
+        private System.Windows.Forms.Button bttRE;
+        private System.Windows.Forms.Button bttEDC;
+        private System.Windows.Forms.Button bttRC;
     }
 }
 

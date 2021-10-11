@@ -64,6 +64,36 @@
     <Compile Include="FormConsulta empleados.Designer.cs">
       <DependentUpon>FormConsulta empleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormConsultarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarClientes.Designer.cs">
+      <DependentUpon>FormConsultarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarDatosCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarDatosCliente.Designer.cs">
+      <DependentUpon>FormEditarDatosCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarDatosEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarDatosEmpleados.Designer.cs">
+      <DependentUpon>FormEditarDatosEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistroClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistroClientes.Designer.cs">
+      <DependentUpon>FormRegistroClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistroEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistroEmpleados.Designer.cs">
+      <DependentUpon>FormRegistroEmpleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +122,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormConsulta empleados.resx">
       <DependentUpon>FormConsulta empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarClientes.resx">
+      <DependentUpon>FormConsultarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarDatosCliente.resx">
+      <DependentUpon>FormEditarDatosCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarDatosEmpleados.resx">
+      <DependentUpon>FormEditarDatosEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistroClientes.resx">
+      <DependentUpon>FormRegistroClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistroEmpleados.resx">
+      <DependentUpon>FormRegistroEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

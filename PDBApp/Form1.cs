@@ -88,6 +88,18 @@ namespace PDBApp
             //Agregamos nuestro x contenido, abrir un formulario, mostrar información, hacer una consulta etc.
             hideSubMenu();
         }
+        private void bttRE_Click(object sender, EventArgs e)
+        {
+            openChildForms(new FormRegistroEmpleados());
+            //Agregamos nuestro x contenido, abrir un formulario, mostrar información, hacer una consulta etc.
+            hideSubMenu();
+        }
+        private void bttEDE_Click(object sender, EventArgs e)
+        {
+            openChildForms(new FormEditarDatosEmpleados());
+            //Agregamos nuestro x contenido, abrir un formulario, mostrar información, hacer una consulta etc.
+            hideSubMenu();
+        }
         #endregion
         #region Contabilidad
         private void Contabilidad_Click(object sender, EventArgs e)
@@ -109,6 +121,19 @@ namespace PDBApp
 
         private void button2_Click(object sender, EventArgs e)
         {
+            openChildForms(new FormConsultarClientes());
+            //Agregamos nuestro x contenido, abrir un formulario, mostrar información, hacer una consulta etc.
+            hideSubMenu();
+        }
+        private void bttRC_Click(object sender, EventArgs e)
+        {
+            openChildForms(new FormRegistroClientes());
+            //Agregamos nuestro x contenido, abrir un formulario, mostrar información, hacer una consulta etc.
+            hideSubMenu();
+        }
+        private void bttEDC_Click(object sender, EventArgs e)
+        {
+            openChildForms(new FormEditarDatosCliente());
             //Agregamos nuestro x contenido, abrir un formulario, mostrar información, hacer una consulta etc.
             hideSubMenu();
         }
@@ -142,5 +167,7 @@ namespace PDBApp
         {
 
         }
+
+
     }
 }
