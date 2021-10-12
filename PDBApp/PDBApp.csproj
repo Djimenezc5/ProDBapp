@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actualizacion_proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizacion_proveedores.Designer.cs">
+      <DependentUpon>Actualizacion_proveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consulta_proveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Actualizacion_proveedores.resx">
+      <DependentUpon>Actualizacion_proveedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consulta_proveedores.resx">
       <DependentUpon>Consulta_proveedores.cs</DependentUpon>
     </EmbeddedResource>
