@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contabiliddad.cs">
+    <Compile Include="Libros_Conta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Contabiliddad.Designer.cs">
-      <DependentUpon>Contabiliddad.cs</DependentUpon>
+    <Compile Include="Libros_Conta.Designer.cs">
+      <DependentUpon>Libros_Conta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas_Conta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas_Conta.Designer.cs">
+      <DependentUpon>Ventas_Conta.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -114,8 +120,11 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Contabiliddad.resx">
-      <DependentUpon>Contabiliddad.cs</DependentUpon>
+    <EmbeddedResource Include="Libros_Conta.resx">
+      <DependentUpon>Libros_Conta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas_Conta.resx">
+      <DependentUpon>Ventas_Conta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

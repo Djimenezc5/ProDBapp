@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PDBApp
 {
-    public partial class Contabiliddad : Form
+    public partial class Ventas_Conta : Form
     {
-        public Contabiliddad()
+        public Ventas_Conta()
         {
             InitializeComponent();
         }

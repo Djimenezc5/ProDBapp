@@ -1,7 +1,7 @@
 ﻿
 namespace PDBApp
 {
-    partial class Contabiliddad
+    partial class Ventas_Conta
     {
         /// <summary>
         /// Required designer variable.
@@ -88,9 +88,9 @@ namespace PDBApp
             this.labelDG.ForeColor = System.Drawing.Color.LightGray;
             this.labelDG.Location = new System.Drawing.Point(9, 375);
             this.labelDG.Name = "labelDG";
-            this.labelDG.Size = new System.Drawing.Size(354, 20);
+            this.labelDG.Size = new System.Drawing.Size(284, 20);
             this.labelDG.TabIndex = 16;
-            this.labelDG.Text = "Datos Generales de los las ventas mínimas";
+            this.labelDG.Text = "Datos Generales de los las ventas";
             // 
             // btttop
             // 
@@ -140,7 +140,7 @@ namespace PDBApp
             this.button2.Text = "Menores Ventas";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // Contabiliddad
+            // Ventas_Conta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -154,7 +154,7 @@ namespace PDBApp
             this.Controls.Add(this.bttClose);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Contabiliddad";
+            this.Name = "Ventas_Conta";
             this.Text = "Contabiliddad";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
