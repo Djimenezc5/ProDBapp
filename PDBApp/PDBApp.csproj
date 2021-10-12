@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consulta_proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta_proveedores.Designer.cs">
+      <DependentUpon>Consulta_proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingreso_Inventarios_Conta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingreso_Inventarios_Conta.Designer.cs">
+      <DependentUpon>Ingreso_Inventarios_Conta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Libros_Conta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +132,12 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Consulta_proveedores.resx">
+      <DependentUpon>Consulta_proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingreso_Inventarios_Conta.resx">
+      <DependentUpon>Ingreso_Inventarios_Conta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Libros_Conta.resx">
       <DependentUpon>Libros_Conta.cs</DependentUpon>
     </EmbeddedResource>
