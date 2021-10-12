@@ -16,5 +16,10 @@ namespace PDBApp
         {
             InitializeComponent();
         }
+
+        private void labelCC_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
