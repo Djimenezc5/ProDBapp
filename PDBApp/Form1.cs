@@ -109,6 +109,7 @@ namespace PDBApp
 
         private void button3_Click(object sender, EventArgs e)
         {
+            openChildForms(new Ventas_Conta());
             //Agregamos nuestro x contenido, abrir un formulario, mostrar información, hacer una consulta etc.
             hideSubMenu();
         }
@@ -168,6 +169,9 @@ namespace PDBApp
 
         }
 
-
+        private void button5_Click(object sender, EventArgs e)
+        {
+            openChildForms(new Libros_Conta());
+        }
     }
 }

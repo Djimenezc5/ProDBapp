@@ -35,10 +35,12 @@
             this.button4 = new System.Windows.Forms.Button();
             this.Proveedores = new System.Windows.Forms.Button();
             this.panelClientes = new System.Windows.Forms.Panel();
+            this.bttEDC = new System.Windows.Forms.Button();
+            this.bttRC = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.Clientes = new System.Windows.Forms.Button();
             this.panelContabilidad = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btt_consulta = new System.Windows.Forms.Button();
             this.Contabilidad = new System.Windows.Forms.Button();
             this.panelEmpleados = new System.Windows.Forms.Panel();
             this.bttEDE = new System.Windows.Forms.Button();
@@ -49,8 +51,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.bttRC = new System.Windows.Forms.Button();
-            this.bttEDC = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelProveedores.SuspendLayout();
             this.panelClientes.SuspendLayout();
@@ -89,7 +93,7 @@
             this.Sucursales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(12)))), ((int)(((byte)(31)))));
             this.Sucursales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sucursales.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Sucursales.Location = new System.Drawing.Point(0, 691);
+            this.Sucursales.Location = new System.Drawing.Point(0, 684);
             this.Sucursales.Name = "Sucursales";
             this.Sucursales.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Sucursales.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -103,11 +107,12 @@
             // panelProveedores
             // 
             this.panelProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelProveedores.Controls.Add(this.button8);
             this.panelProveedores.Controls.Add(this.button4);
             this.panelProveedores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelProveedores.Location = new System.Drawing.Point(0, 581);
+            this.panelProveedores.Location = new System.Drawing.Point(0, 606);
             this.panelProveedores.Name = "panelProveedores";
-            this.panelProveedores.Size = new System.Drawing.Size(233, 110);
+            this.panelProveedores.Size = new System.Drawing.Size(233, 78);
             this.panelProveedores.TabIndex = 5;
             // 
             // button4
@@ -120,9 +125,9 @@
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button4.Size = new System.Drawing.Size(233, 40);
+            this.button4.Size = new System.Drawing.Size(233, 37);
             this.button4.TabIndex = 0;
-            this.button4.Text = "button4";
+            this.button4.Text = "Consulta de proveedores";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -134,7 +139,7 @@
             this.Proveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(12)))), ((int)(((byte)(31)))));
             this.Proveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Proveedores.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Proveedores.Location = new System.Drawing.Point(0, 536);
+            this.Proveedores.Location = new System.Drawing.Point(0, 561);
             this.Proveedores.Name = "Proveedores";
             this.Proveedores.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Proveedores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -152,10 +157,44 @@
             this.panelClientes.Controls.Add(this.bttRC);
             this.panelClientes.Controls.Add(this.button2);
             this.panelClientes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelClientes.Location = new System.Drawing.Point(0, 426);
+            this.panelClientes.Location = new System.Drawing.Point(0, 451);
             this.panelClientes.Name = "panelClientes";
             this.panelClientes.Size = new System.Drawing.Size(233, 110);
             this.panelClientes.TabIndex = 4;
+            // 
+            // bttEDC
+            // 
+            this.bttEDC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bttEDC.FlatAppearance.BorderSize = 0;
+            this.bttEDC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.bttEDC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttEDC.Location = new System.Drawing.Point(0, 69);
+            this.bttEDC.Name = "bttEDC";
+            this.bttEDC.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.bttEDC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bttEDC.Size = new System.Drawing.Size(233, 41);
+            this.bttEDC.TabIndex = 2;
+            this.bttEDC.Text = "Editar datos de clientes";
+            this.bttEDC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bttEDC.UseVisualStyleBackColor = true;
+            this.bttEDC.Click += new System.EventHandler(this.bttEDC_Click);
+            // 
+            // bttRC
+            // 
+            this.bttRC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bttRC.FlatAppearance.BorderSize = 0;
+            this.bttRC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.bttRC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttRC.Location = new System.Drawing.Point(0, 34);
+            this.bttRC.Name = "bttRC";
+            this.bttRC.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.bttRC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bttRC.Size = new System.Drawing.Size(233, 35);
+            this.bttRC.TabIndex = 1;
+            this.bttRC.Text = "Registro de clientes";
+            this.bttRC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bttRC.UseVisualStyleBackColor = true;
+            this.bttRC.Click += new System.EventHandler(this.bttRC_Click);
             // 
             // button2
             // 
@@ -181,7 +220,7 @@
             this.Clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(12)))), ((int)(((byte)(31)))));
             this.Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Clientes.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Clientes.Location = new System.Drawing.Point(0, 381);
+            this.Clientes.Location = new System.Drawing.Point(0, 406);
             this.Clientes.Name = "Clientes";
             this.Clientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Clientes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -195,29 +234,32 @@
             // panelContabilidad
             // 
             this.panelContabilidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelContabilidad.Controls.Add(this.button3);
+            this.panelContabilidad.Controls.Add(this.button7);
+            this.panelContabilidad.Controls.Add(this.button6);
+            this.panelContabilidad.Controls.Add(this.button5);
+            this.panelContabilidad.Controls.Add(this.btt_consulta);
             this.panelContabilidad.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelContabilidad.Location = new System.Drawing.Point(0, 271);
             this.panelContabilidad.Name = "panelContabilidad";
-            this.panelContabilidad.Size = new System.Drawing.Size(233, 110);
+            this.panelContabilidad.Size = new System.Drawing.Size(233, 135);
             this.panelContabilidad.TabIndex = 3;
             // 
-            // button3
+            // btt_consulta
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(0, 0);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button3.Size = new System.Drawing.Size(233, 40);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "button3";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btt_consulta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btt_consulta.FlatAppearance.BorderSize = 0;
+            this.btt_consulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.btt_consulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btt_consulta.Location = new System.Drawing.Point(0, 0);
+            this.btt_consulta.Name = "btt_consulta";
+            this.btt_consulta.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btt_consulta.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btt_consulta.Size = new System.Drawing.Size(233, 31);
+            this.btt_consulta.TabIndex = 0;
+            this.btt_consulta.Text = "Consulta Ventas";
+            this.btt_consulta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btt_consulta.UseVisualStyleBackColor = true;
+            this.btt_consulta.Click += new System.EventHandler(this.button3_Click);
             // 
             // Contabilidad
             // 
@@ -359,39 +401,70 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // bttRC
+            // button5
             // 
-            this.bttRC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bttRC.FlatAppearance.BorderSize = 0;
-            this.bttRC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
-            this.bttRC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttRC.Location = new System.Drawing.Point(0, 34);
-            this.bttRC.Name = "bttRC";
-            this.bttRC.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.bttRC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bttRC.Size = new System.Drawing.Size(233, 35);
-            this.bttRC.TabIndex = 1;
-            this.bttRC.Text = "Registro de clientes";
-            this.bttRC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bttRC.UseVisualStyleBackColor = true;
-            this.bttRC.Click += new System.EventHandler(this.bttRC_Click);
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(0, 31);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button5.Size = new System.Drawing.Size(233, 43);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "Consultar libros de contabilidad";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // bttEDC
+            // button6
             // 
-            this.bttEDC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bttEDC.FlatAppearance.BorderSize = 0;
-            this.bttEDC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
-            this.bttEDC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttEDC.Location = new System.Drawing.Point(0, 69);
-            this.bttEDC.Name = "bttEDC";
-            this.bttEDC.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.bttEDC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bttEDC.Size = new System.Drawing.Size(233, 41);
-            this.bttEDC.TabIndex = 2;
-            this.bttEDC.Text = "Editar datos de clientes";
-            this.bttEDC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bttEDC.UseVisualStyleBackColor = true;
-            this.bttEDC.Click += new System.EventHandler(this.bttEDC_Click);
+            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(0, 74);
+            this.button6.Name = "button6";
+            this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button6.Size = new System.Drawing.Size(233, 31);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Editar datos de inventario";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(0, 105);
+            this.button7.Name = "button7";
+            this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button7.Size = new System.Drawing.Size(233, 31);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "Actualización de datos";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(0, 37);
+            this.button8.Name = "button8";
+            this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button8.Size = new System.Drawing.Size(233, 30);
+            this.button8.TabIndex = 1;
+            this.button8.Text = "Editar datos de proveedores";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button8.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -431,7 +504,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Empleados;
         private System.Windows.Forms.Panel panelContabilidad;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btt_consulta;
         private System.Windows.Forms.Button Contabilidad;
         private System.Windows.Forms.Panel panelProveedores;
         private System.Windows.Forms.Button button4;
@@ -447,6 +520,10 @@
         private System.Windows.Forms.Button bttRE;
         private System.Windows.Forms.Button bttEDC;
         private System.Windows.Forms.Button bttRC;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
     }
 }
 
