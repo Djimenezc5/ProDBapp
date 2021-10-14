@@ -173,11 +173,18 @@ namespace PDBApp
         private void button5_Click(object sender, EventArgs e)
         {
             openChildForms(new Libros_Conta());
+            hideSubMenu();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             openChildForms(new Actualizacion_proveedores());
+            hideSubMenu();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
