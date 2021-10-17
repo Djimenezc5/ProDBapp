@@ -25,6 +25,16 @@ namespace PDBApp
             panelEmpleados.Visible = false;
             panelProveedores.Visible = false;
             // Podemos agregar otras formas de personalizar el diseño
+            tbIDfac.Enabled = false;
+            tbTF.Enabled = false;
+            tbIDfacDet.Enabled = false;
+            cbIDProd.Enabled = false;
+            cbIDtipoprod.Enabled = false;
+            tbPrecio.Enabled = false;
+            tbSubtotal.Enabled = false;
+            tbIVA.Enabled = false;
+            tbTotal.Enabled = false;
+
         }
 
         private void hideSubMenu() 
@@ -75,7 +85,14 @@ namespace PDBApp
             childForm.BringToFront();
             childForm.Show();
         }
-
+        private void bttAceptar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Encabezado creado");
+            tbIDfacDet.Enabled = true;
+            cbIDProd.Enabled = true;
+            cbIDtipoprod.Enabled = true;
+            tbPrecio.Enabled = true;
+        }
         #region Empleados
         private void Empleados_Click(object sender, EventArgs e)
         {
@@ -109,6 +126,7 @@ namespace PDBApp
 
         private void button3_Click(object sender, EventArgs e)
         {
+            openChildForms(new Ventas_Conta());
             //Agregamos nuestro x contenido, abrir un formulario, mostrar información, hacer una consulta etc.
             hideSubMenu();
         }
@@ -146,6 +164,7 @@ namespace PDBApp
 
         private void button4_Click(object sender, EventArgs e)
         {
+            openChildForms(new Consulta_proveedores());
             //Agregamos nuestro x contenido, abrir un formulario, mostrar información, hacer una consulta etc.
             hideSubMenu();
         }
@@ -168,6 +187,22 @@ namespace PDBApp
 
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            openChildForms(new Libros_Conta());
+            hideSubMenu();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            openChildForms(new Actualizacion_proveedores());
+            hideSubMenu();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
 
     }
 }

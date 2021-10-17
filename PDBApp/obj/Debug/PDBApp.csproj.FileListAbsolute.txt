@@ -2,7 +2,6 @@ E:\Proyectos\C#\PDBApp\PDBApp\bin\Debug\PDBApp.exe.config
 E:\Proyectos\C#\PDBApp\PDBApp\bin\Debug\PDBApp.exe
 E:\Proyectos\C#\PDBApp\PDBApp\bin\Debug\PDBApp.pdb
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.csprojAssemblyReference.cache
-E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Contabiliddad.resources
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Form1.resources
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.FormConsulta_empleados.resources
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.FormConsultarClientes.resources
@@ -12,7 +11,6 @@ E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.FormRegistroClientes.resources
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.FormRegistroEmpleados.resources
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Login.resources
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Properties.Resources.resources
-E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Proveedores.resources
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Registro.resources
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.csproj.GenerateResource.cache
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.exe
@@ -37,3 +35,8 @@ C:\Users\HP\Source\Repos\ProDBapp\PDBApp\obj\Debug\PDBApp.csproj.GenerateResourc
 C:\Users\HP\Source\Repos\ProDBapp\PDBApp\obj\Debug\PDBApp.csproj.CoreCompileInputs.cache
 C:\Users\HP\Source\Repos\ProDBapp\PDBApp\obj\Debug\PDBApp.exe
 C:\Users\HP\Source\Repos\ProDBapp\PDBApp\obj\Debug\PDBApp.pdb
+E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Actualizacion_proveedores.resources
+E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Consulta_proveedores.resources
+E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Ingreso_Inventarios_Conta.resources
+E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Libros_Conta.resources
+E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Ventas_Conta.resources

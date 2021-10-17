@@ -32,13 +32,19 @@
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.Sucursales = new System.Windows.Forms.Button();
             this.panelProveedores = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.Proveedores = new System.Windows.Forms.Button();
             this.panelClientes = new System.Windows.Forms.Panel();
+            this.bttEDC = new System.Windows.Forms.Button();
+            this.bttRC = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.Clientes = new System.Windows.Forms.Button();
             this.panelContabilidad = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btt_consulta = new System.Windows.Forms.Button();
             this.Contabilidad = new System.Windows.Forms.Button();
             this.panelEmpleados = new System.Windows.Forms.Panel();
             this.bttEDE = new System.Windows.Forms.Button();
@@ -48,9 +54,37 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.bttRC = new System.Windows.Forms.Button();
-            this.bttEDC = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.bttAceptarD = new System.Windows.Forms.Button();
+            this.cbIDProd = new System.Windows.Forms.ComboBox();
+            this.cbIDtipoprod = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tbTotal = new System.Windows.Forms.TextBox();
+            this.IVA = new System.Windows.Forms.Label();
+            this.tbIVA = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tbPrecio = new System.Windows.Forms.TextBox();
+            this.precio = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.tbTF = new System.Windows.Forms.TextBox();
+            this.cbSucursal = new System.Windows.Forms.ComboBox();
+            this.tbIDfac = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tbIDfacDet = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tbSubtotal = new System.Windows.Forms.TextBox();
+            this.tbIDCliente = new System.Windows.Forms.TextBox();
+            this.tbIDEmpleado = new System.Windows.Forms.TextBox();
+            this.bttAceptar = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labeRE = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelProveedores.SuspendLayout();
             this.panelClientes.SuspendLayout();
@@ -59,7 +93,6 @@
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelChildForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -89,7 +122,7 @@
             this.Sucursales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(12)))), ((int)(((byte)(31)))));
             this.Sucursales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sucursales.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Sucursales.Location = new System.Drawing.Point(0, 691);
+            this.Sucursales.Location = new System.Drawing.Point(0, 684);
             this.Sucursales.Name = "Sucursales";
             this.Sucursales.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Sucursales.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -103,12 +136,30 @@
             // panelProveedores
             // 
             this.panelProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelProveedores.Controls.Add(this.button8);
             this.panelProveedores.Controls.Add(this.button4);
             this.panelProveedores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelProveedores.Location = new System.Drawing.Point(0, 581);
+            this.panelProveedores.Location = new System.Drawing.Point(0, 606);
             this.panelProveedores.Name = "panelProveedores";
-            this.panelProveedores.Size = new System.Drawing.Size(233, 110);
+            this.panelProveedores.Size = new System.Drawing.Size(233, 78);
             this.panelProveedores.TabIndex = 5;
+            // 
+            // button8
+            // 
+            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(0, 37);
+            this.button8.Name = "button8";
+            this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button8.Size = new System.Drawing.Size(233, 30);
+            this.button8.TabIndex = 1;
+            this.button8.Text = "Editar datos de proveedores";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button4
             // 
@@ -120,9 +171,9 @@
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button4.Size = new System.Drawing.Size(233, 40);
+            this.button4.Size = new System.Drawing.Size(233, 37);
             this.button4.TabIndex = 0;
-            this.button4.Text = "button4";
+            this.button4.Text = "Consulta de proveedores";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -134,7 +185,7 @@
             this.Proveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(12)))), ((int)(((byte)(31)))));
             this.Proveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Proveedores.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Proveedores.Location = new System.Drawing.Point(0, 536);
+            this.Proveedores.Location = new System.Drawing.Point(0, 561);
             this.Proveedores.Name = "Proveedores";
             this.Proveedores.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Proveedores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -152,10 +203,44 @@
             this.panelClientes.Controls.Add(this.bttRC);
             this.panelClientes.Controls.Add(this.button2);
             this.panelClientes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelClientes.Location = new System.Drawing.Point(0, 426);
+            this.panelClientes.Location = new System.Drawing.Point(0, 451);
             this.panelClientes.Name = "panelClientes";
             this.panelClientes.Size = new System.Drawing.Size(233, 110);
             this.panelClientes.TabIndex = 4;
+            // 
+            // bttEDC
+            // 
+            this.bttEDC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bttEDC.FlatAppearance.BorderSize = 0;
+            this.bttEDC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.bttEDC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttEDC.Location = new System.Drawing.Point(0, 69);
+            this.bttEDC.Name = "bttEDC";
+            this.bttEDC.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.bttEDC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bttEDC.Size = new System.Drawing.Size(233, 41);
+            this.bttEDC.TabIndex = 2;
+            this.bttEDC.Text = "Editar datos de clientes";
+            this.bttEDC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bttEDC.UseVisualStyleBackColor = true;
+            this.bttEDC.Click += new System.EventHandler(this.bttEDC_Click);
+            // 
+            // bttRC
+            // 
+            this.bttRC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bttRC.FlatAppearance.BorderSize = 0;
+            this.bttRC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.bttRC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttRC.Location = new System.Drawing.Point(0, 34);
+            this.bttRC.Name = "bttRC";
+            this.bttRC.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.bttRC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bttRC.Size = new System.Drawing.Size(233, 35);
+            this.bttRC.TabIndex = 1;
+            this.bttRC.Text = "Registro de clientes";
+            this.bttRC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bttRC.UseVisualStyleBackColor = true;
+            this.bttRC.Click += new System.EventHandler(this.bttRC_Click);
             // 
             // button2
             // 
@@ -181,7 +266,7 @@
             this.Clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(12)))), ((int)(((byte)(31)))));
             this.Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Clientes.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Clientes.Location = new System.Drawing.Point(0, 381);
+            this.Clientes.Location = new System.Drawing.Point(0, 406);
             this.Clientes.Name = "Clientes";
             this.Clientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Clientes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -195,29 +280,82 @@
             // panelContabilidad
             // 
             this.panelContabilidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelContabilidad.Controls.Add(this.button3);
+            this.panelContabilidad.Controls.Add(this.button7);
+            this.panelContabilidad.Controls.Add(this.button6);
+            this.panelContabilidad.Controls.Add(this.button5);
+            this.panelContabilidad.Controls.Add(this.btt_consulta);
             this.panelContabilidad.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelContabilidad.Location = new System.Drawing.Point(0, 271);
             this.panelContabilidad.Name = "panelContabilidad";
-            this.panelContabilidad.Size = new System.Drawing.Size(233, 110);
+            this.panelContabilidad.Size = new System.Drawing.Size(233, 135);
             this.panelContabilidad.TabIndex = 3;
             // 
-            // button3
+            // button7
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(0, 0);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button3.Size = new System.Drawing.Size(233, 40);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "button3";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(0, 105);
+            this.button7.Name = "button7";
+            this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button7.Size = new System.Drawing.Size(233, 31);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "Actualización de datos";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(0, 74);
+            this.button6.Name = "button6";
+            this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button6.Size = new System.Drawing.Size(233, 31);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Editar datos de inventario";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(0, 31);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button5.Size = new System.Drawing.Size(233, 43);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "Consultar libros de contabilidad";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // btt_consulta
+            // 
+            this.btt_consulta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btt_consulta.FlatAppearance.BorderSize = 0;
+            this.btt_consulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.btt_consulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btt_consulta.Location = new System.Drawing.Point(0, 0);
+            this.btt_consulta.Name = "btt_consulta";
+            this.btt_consulta.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btt_consulta.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btt_consulta.Size = new System.Drawing.Size(233, 31);
+            this.btt_consulta.TabIndex = 0;
+            this.btt_consulta.Text = "Consulta Ventas";
+            this.btt_consulta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btt_consulta.UseVisualStyleBackColor = true;
+            this.btt_consulta.Click += new System.EventHandler(this.button3_Click);
             // 
             // Contabilidad
             // 
@@ -340,7 +478,37 @@
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.panelChildForm.Controls.Add(this.pictureBox2);
+            this.panelChildForm.Controls.Add(this.label10);
+            this.panelChildForm.Controls.Add(this.dateTimePicker1);
+            this.panelChildForm.Controls.Add(this.bttAceptarD);
+            this.panelChildForm.Controls.Add(this.cbIDProd);
+            this.panelChildForm.Controls.Add(this.cbIDtipoprod);
+            this.panelChildForm.Controls.Add(this.label16);
+            this.panelChildForm.Controls.Add(this.tbTotal);
+            this.panelChildForm.Controls.Add(this.IVA);
+            this.panelChildForm.Controls.Add(this.tbIVA);
+            this.panelChildForm.Controls.Add(this.label14);
+            this.panelChildForm.Controls.Add(this.tbPrecio);
+            this.panelChildForm.Controls.Add(this.precio);
+            this.panelChildForm.Controls.Add(this.label12);
+            this.panelChildForm.Controls.Add(this.tbTF);
+            this.panelChildForm.Controls.Add(this.cbSucursal);
+            this.panelChildForm.Controls.Add(this.tbIDfac);
+            this.panelChildForm.Controls.Add(this.label13);
+            this.panelChildForm.Controls.Add(this.tbIDfacDet);
+            this.panelChildForm.Controls.Add(this.label9);
+            this.panelChildForm.Controls.Add(this.tbSubtotal);
+            this.panelChildForm.Controls.Add(this.tbIDCliente);
+            this.panelChildForm.Controls.Add(this.tbIDEmpleado);
+            this.panelChildForm.Controls.Add(this.bttAceptar);
+            this.panelChildForm.Controls.Add(this.label8);
+            this.panelChildForm.Controls.Add(this.label7);
+            this.panelChildForm.Controls.Add(this.label6);
+            this.panelChildForm.Controls.Add(this.label4);
+            this.panelChildForm.Controls.Add(this.label3);
+            this.panelChildForm.Controls.Add(this.label2);
+            this.panelChildForm.Controls.Add(this.label1);
+            this.panelChildForm.Controls.Add(this.labeRE);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
@@ -348,50 +516,333 @@
             this.panelChildForm.TabIndex = 1;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
-            // pictureBox2
+            // label10
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(262, 167);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(198, 198);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.LightGray;
+            this.label10.Location = new System.Drawing.Point(286, 206);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(59, 20);
+            this.label10.TabIndex = 92;
+            this.label10.Text = "Fecha";
             // 
-            // bttRC
+            // dateTimePicker1
             // 
-            this.bttRC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bttRC.FlatAppearance.BorderSize = 0;
-            this.bttRC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
-            this.bttRC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttRC.Location = new System.Drawing.Point(0, 34);
-            this.bttRC.Name = "bttRC";
-            this.bttRC.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.bttRC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bttRC.Size = new System.Drawing.Size(233, 35);
-            this.bttRC.TabIndex = 1;
-            this.bttRC.Text = "Registro de clientes";
-            this.bttRC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bttRC.UseVisualStyleBackColor = true;
-            this.bttRC.Click += new System.EventHandler(this.bttRC_Click);
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePicker1.Location = new System.Drawing.Point(357, 201);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(229, 23);
+            this.dateTimePicker1.TabIndex = 91;
             // 
-            // bttEDC
+            // bttAceptarD
             // 
-            this.bttEDC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bttEDC.FlatAppearance.BorderSize = 0;
-            this.bttEDC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
-            this.bttEDC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttEDC.Location = new System.Drawing.Point(0, 69);
-            this.bttEDC.Name = "bttEDC";
-            this.bttEDC.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.bttEDC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bttEDC.Size = new System.Drawing.Size(233, 41);
-            this.bttEDC.TabIndex = 2;
-            this.bttEDC.Text = "Editar datos de clientes";
-            this.bttEDC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bttEDC.UseVisualStyleBackColor = true;
-            this.bttEDC.Click += new System.EventHandler(this.bttEDC_Click);
+            this.bttAceptarD.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.bttAceptarD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(25)))), ((int)(((byte)(42)))));
+            this.bttAceptarD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttAceptarD.ForeColor = System.Drawing.Color.LightGray;
+            this.bttAceptarD.Location = new System.Drawing.Point(593, 377);
+            this.bttAceptarD.Margin = new System.Windows.Forms.Padding(4);
+            this.bttAceptarD.Name = "bttAceptarD";
+            this.bttAceptarD.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bttAceptarD.Size = new System.Drawing.Size(78, 30);
+            this.bttAceptarD.TabIndex = 90;
+            this.bttAceptarD.Text = "Aceptar";
+            this.bttAceptarD.UseVisualStyleBackColor = true;
+            // 
+            // cbIDProd
+            // 
+            this.cbIDProd.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.cbIDProd.FormattingEnabled = true;
+            this.cbIDProd.Location = new System.Drawing.Point(494, 302);
+            this.cbIDProd.Name = "cbIDProd";
+            this.cbIDProd.Size = new System.Drawing.Size(178, 24);
+            this.cbIDProd.TabIndex = 89;
+            // 
+            // cbIDtipoprod
+            // 
+            this.cbIDtipoprod.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.cbIDtipoprod.FormattingEnabled = true;
+            this.cbIDtipoprod.Location = new System.Drawing.Point(176, 342);
+            this.cbIDtipoprod.Name = "cbIDtipoprod";
+            this.cbIDtipoprod.Size = new System.Drawing.Size(176, 24);
+            this.cbIDtipoprod.TabIndex = 88;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.LightGray;
+            this.label16.Location = new System.Drawing.Point(300, 488);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(49, 20);
+            this.label16.TabIndex = 87;
+            this.label16.Text = "Total";
+            // 
+            // tbTotal
+            // 
+            this.tbTotal.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tbTotal.Location = new System.Drawing.Point(355, 485);
+            this.tbTotal.Name = "tbTotal";
+            this.tbTotal.Size = new System.Drawing.Size(178, 23);
+            this.tbTotal.TabIndex = 86;
+            // 
+            // IVA
+            // 
+            this.IVA.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.IVA.AutoSize = true;
+            this.IVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IVA.ForeColor = System.Drawing.Color.LightGray;
+            this.IVA.Location = new System.Drawing.Point(310, 448);
+            this.IVA.Name = "IVA";
+            this.IVA.Size = new System.Drawing.Size(39, 20);
+            this.IVA.TabIndex = 85;
+            this.IVA.Text = "IVA";
+            // 
+            // tbIVA
+            // 
+            this.tbIVA.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tbIVA.Location = new System.Drawing.Point(355, 445);
+            this.tbIVA.Name = "tbIVA";
+            this.tbIVA.Size = new System.Drawing.Size(178, 23);
+            this.tbIVA.TabIndex = 84;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.LightGray;
+            this.label14.Location = new System.Drawing.Point(1, 345);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(169, 20);
+            this.label14.TabIndex = 83;
+            this.label14.Text = "ID tipo de producto ";
+            // 
+            // tbPrecio
+            // 
+            this.tbPrecio.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tbPrecio.Location = new System.Drawing.Point(494, 342);
+            this.tbPrecio.Name = "tbPrecio";
+            this.tbPrecio.Size = new System.Drawing.Size(177, 23);
+            this.tbPrecio.TabIndex = 81;
+            // 
+            // precio
+            // 
+            this.precio.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.precio.AutoSize = true;
+            this.precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.precio.ForeColor = System.Drawing.Color.LightGray;
+            this.precio.Location = new System.Drawing.Point(429, 342);
+            this.precio.Name = "precio";
+            this.precio.Size = new System.Drawing.Size(59, 20);
+            this.precio.TabIndex = 80;
+            this.precio.Text = "Precio";
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.LightGray;
+            this.label12.Location = new System.Drawing.Point(7, 306);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(134, 20);
+            this.label12.TabIndex = 79;
+            this.label12.Text = "ID de la factura";
+            // 
+            // tbTF
+            // 
+            this.tbTF.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbTF.Location = new System.Drawing.Point(357, 230);
+            this.tbTF.Name = "tbTF";
+            this.tbTF.Size = new System.Drawing.Size(229, 23);
+            this.tbTF.TabIndex = 78;
+            // 
+            // cbSucursal
+            // 
+            this.cbSucursal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbSucursal.FormattingEnabled = true;
+            this.cbSucursal.Location = new System.Drawing.Point(357, 108);
+            this.cbSucursal.Name = "cbSucursal";
+            this.cbSucursal.Size = new System.Drawing.Size(229, 24);
+            this.cbSucursal.TabIndex = 77;
+            // 
+            // tbIDfac
+            // 
+            this.tbIDfac.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbIDfac.Location = new System.Drawing.Point(357, 79);
+            this.tbIDfac.Name = "tbIDfac";
+            this.tbIDfac.Size = new System.Drawing.Size(229, 23);
+            this.tbIDfac.TabIndex = 76;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.LightGray;
+            this.label13.Location = new System.Drawing.Point(211, 82);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(134, 20);
+            this.label13.TabIndex = 75;
+            this.label13.Text = "ID de la factura";
+            // 
+            // tbIDfacDet
+            // 
+            this.tbIDfacDet.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tbIDfacDet.Location = new System.Drawing.Point(147, 303);
+            this.tbIDfacDet.Name = "tbIDfacDet";
+            this.tbIDfacDet.Size = new System.Drawing.Size(205, 23);
+            this.tbIDfacDet.TabIndex = 74;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.LightGray;
+            this.label9.Location = new System.Drawing.Point(7, 271);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(194, 24);
+            this.label9.TabIndex = 68;
+            this.label9.Text = "Detalle de la factura";
+            // 
+            // tbSubtotal
+            // 
+            this.tbSubtotal.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tbSubtotal.Location = new System.Drawing.Point(355, 407);
+            this.tbSubtotal.Name = "tbSubtotal";
+            this.tbSubtotal.Size = new System.Drawing.Size(177, 23);
+            this.tbSubtotal.TabIndex = 66;
+            // 
+            // tbIDCliente
+            // 
+            this.tbIDCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbIDCliente.Location = new System.Drawing.Point(357, 169);
+            this.tbIDCliente.Name = "tbIDCliente";
+            this.tbIDCliente.Size = new System.Drawing.Size(229, 23);
+            this.tbIDCliente.TabIndex = 63;
+            // 
+            // tbIDEmpleado
+            // 
+            this.tbIDEmpleado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbIDEmpleado.Location = new System.Drawing.Point(357, 140);
+            this.tbIDEmpleado.Name = "tbIDEmpleado";
+            this.tbIDEmpleado.Size = new System.Drawing.Size(229, 23);
+            this.tbIDEmpleado.TabIndex = 62;
+            // 
+            // bttAceptar
+            // 
+            this.bttAceptar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bttAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(25)))), ((int)(((byte)(42)))));
+            this.bttAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttAceptar.ForeColor = System.Drawing.Color.LightGray;
+            this.bttAceptar.Location = new System.Drawing.Point(593, 223);
+            this.bttAceptar.Margin = new System.Windows.Forms.Padding(4);
+            this.bttAceptar.Name = "bttAceptar";
+            this.bttAceptar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bttAceptar.Size = new System.Drawing.Size(78, 30);
+            this.bttAceptar.TabIndex = 60;
+            this.bttAceptar.Text = "Aceptar";
+            this.bttAceptar.UseVisualStyleBackColor = true;
+            this.bttAceptar.Click += new System.EventHandler(this.bttAceptar_Click);
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.LightGray;
+            this.label8.Location = new System.Drawing.Point(272, 407);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(77, 20);
+            this.label8.TabIndex = 59;
+            this.label8.Text = "Subtotal";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.LightGray;
+            this.label7.Location = new System.Drawing.Point(190, 233);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(155, 20);
+            this.label7.TabIndex = 58;
+            this.label7.Text = "Total de la factura";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.LightGray;
+            this.label6.Location = new System.Drawing.Point(355, 306);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(133, 20);
+            this.label6.TabIndex = 57;
+            this.label6.Text = "ID del producto";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.LightGray;
+            this.label4.Location = new System.Drawing.Point(230, 179);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(115, 20);
+            this.label4.TabIndex = 55;
+            this.label4.Text = "ID del cliente";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.LightGray;
+            this.label3.Location = new System.Drawing.Point(208, 145);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(140, 20);
+            this.label3.TabIndex = 54;
+            this.label3.Text = "ID del empleado";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.LightGray;
+            this.label2.Location = new System.Drawing.Point(266, 112);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 20);
+            this.label2.TabIndex = 53;
+            this.label2.Text = "Sucursal";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.LightGray;
+            this.label1.Location = new System.Drawing.Point(7, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(247, 24);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "Encabezado de la factura";
+            // 
+            // labeRE
+            // 
+            this.labeRE.AutoSize = true;
+            this.labeRE.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeRE.ForeColor = System.Drawing.Color.LightGray;
+            this.labeRE.Location = new System.Drawing.Point(6, 9);
+            this.labeRE.Name = "labeRE";
+            this.labeRE.Size = new System.Drawing.Size(290, 25);
+            this.labeRE.TabIndex = 51;
+            this.labeRE.Text = "Registrar una nueva venta";
             // 
             // Form1
             // 
@@ -418,7 +869,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -431,7 +881,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Empleados;
         private System.Windows.Forms.Panel panelContabilidad;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btt_consulta;
         private System.Windows.Forms.Button Contabilidad;
         private System.Windows.Forms.Panel panelProveedores;
         private System.Windows.Forms.Button button4;
@@ -442,11 +892,45 @@
         private System.Windows.Forms.Button Sucursales;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button bttEDE;
         private System.Windows.Forms.Button bttRE;
         private System.Windows.Forms.Button bttEDC;
         private System.Windows.Forms.Button bttRC;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox tbIDfacDet;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox tbSubtotal;
+        private System.Windows.Forms.TextBox tbIDCliente;
+        private System.Windows.Forms.TextBox tbIDEmpleado;
+        private System.Windows.Forms.Button bttAceptar;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labeRE;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox tbPrecio;
+        private System.Windows.Forms.Label precio;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox tbTF;
+        private System.Windows.Forms.ComboBox cbSucursal;
+        private System.Windows.Forms.TextBox tbIDfac;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox tbTotal;
+        private System.Windows.Forms.Label IVA;
+        private System.Windows.Forms.TextBox tbIVA;
+        private System.Windows.Forms.Button bttAceptarD;
+        private System.Windows.Forms.ComboBox cbIDProd;
+        private System.Windows.Forms.ComboBox cbIDtipoprod;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label10;
     }
 }
 
