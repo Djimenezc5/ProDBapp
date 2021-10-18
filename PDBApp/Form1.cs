@@ -29,7 +29,7 @@ namespace PDBApp
             tbTF.Enabled = false;
             tbIDfacDet.Enabled = false;
             cbIDProd.Enabled = false;
-            cbIDtipoprod.Enabled = false;
+            cbIDtipopago.Enabled = false;
             tbPrecio.Enabled = false;
             tbSubtotal.Enabled = false;
             tbIVA.Enabled = false;
@@ -90,7 +90,7 @@ namespace PDBApp
             MessageBox.Show("Encabezado creado");
             tbIDfacDet.Enabled = true;
             cbIDProd.Enabled = true;
-            cbIDtipoprod.Enabled = true;
+            cbIDtipopago.Enabled = true;
             tbPrecio.Enabled = true;
         }
         #region Empleados
@@ -126,12 +126,23 @@ namespace PDBApp
         }
         private void button5_Click(object sender, EventArgs e)
         {
-
+            openChildForms(new FormAñadirInventarios());
             hideSubMenu();
         }
         private void button6_Click(object sender, EventArgs e)
         {
-
+            openChildForms(new FormAñadirProducto());
+            hideSubMenu();
+        }
+        private void bttEditProd_Click(object sender, EventArgs e)
+        {
+            openChildForms(new FormEditarDatosProductos());
+            hideSubMenu();
+        }
+        private void bttConsultaInventario_Click(object sender, EventArgs e)
+        {
+            openChildForms(new FormConsultarInventarios());
+            hideSubMenu();
         }
         #endregion
         #region Clientes
@@ -194,6 +205,7 @@ namespace PDBApp
         {
 
         }
+
 
     }
 }

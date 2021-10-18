@@ -58,6 +58,30 @@
     <Compile Include="Consulta_proveedores.Designer.cs">
       <DependentUpon>Consulta_proveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAñadirInventarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAñadirInventarios.Designer.cs">
+      <DependentUpon>FormAñadirInventarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAñadirProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAñadirProducto.Designer.cs">
+      <DependentUpon>FormAñadirProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarInventarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarInventarios.Designer.cs">
+      <DependentUpon>FormConsultarInventarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarDatosProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarDatosProductos.Designer.cs">
+      <DependentUpon>FormEditarDatosProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ventas_Conta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +143,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consulta_proveedores.resx">
       <DependentUpon>Consulta_proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAñadirInventarios.resx">
+      <DependentUpon>FormAñadirInventarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAñadirProducto.resx">
+      <DependentUpon>FormAñadirProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarInventarios.resx">
+      <DependentUpon>FormConsultarInventarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarDatosProductos.resx">
+      <DependentUpon>FormEditarDatosProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas_Conta.resx">
       <DependentUpon>Ventas_Conta.cs</DependentUpon>

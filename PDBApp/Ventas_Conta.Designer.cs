@@ -45,10 +45,10 @@ namespace PDBApp
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 16);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 14);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(641, 270);
+            this.dataGridView1.Size = new System.Drawing.Size(656, 299);
             this.dataGridView1.TabIndex = 1;
             // 
             // bttClose
@@ -74,7 +74,7 @@ namespace PDBApp
             this.labelCC.AutoSize = true;
             this.labelCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCC.ForeColor = System.Drawing.Color.LightGray;
-            this.labelCC.Location = new System.Drawing.Point(12, 303);
+            this.labelCC.Location = new System.Drawing.Point(13, 318);
             this.labelCC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCC.Name = "labelCC";
             this.labelCC.Size = new System.Drawing.Size(266, 24);
@@ -88,7 +88,7 @@ namespace PDBApp
             this.labelDG.AutoSize = true;
             this.labelDG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDG.ForeColor = System.Drawing.Color.LightGray;
-            this.labelDG.Location = new System.Drawing.Point(12, 333);
+            this.labelDG.Location = new System.Drawing.Point(13, 348);
             this.labelDG.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDG.Name = "labelDG";
             this.labelDG.Size = new System.Drawing.Size(284, 20);
@@ -102,7 +102,7 @@ namespace PDBApp
             this.btttop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btttop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btttop.ForeColor = System.Drawing.Color.LightGray;
-            this.btttop.Location = new System.Drawing.Point(14, 371);
+            this.btttop.Location = new System.Drawing.Point(106, 393);
             this.btttop.Margin = new System.Windows.Forms.Padding(5);
             this.btttop.Name = "btttop";
             this.btttop.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -118,7 +118,7 @@ namespace PDBApp
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(353, 371);
+            this.button1.Location = new System.Drawing.Point(445, 393);
             this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -134,7 +134,7 @@ namespace PDBApp
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.LightGray;
-            this.button2.Location = new System.Drawing.Point(216, 371);
+            this.button2.Location = new System.Drawing.Point(308, 393);
             this.button2.Margin = new System.Windows.Forms.Padding(5);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

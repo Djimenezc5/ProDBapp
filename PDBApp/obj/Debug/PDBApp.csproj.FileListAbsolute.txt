@@ -37,3 +37,7 @@ C:\Users\HP\Source\Repos\ProDBapp\PDBApp\obj\Debug\PDBApp.pdb
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Actualizacion_proveedores.resources
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Consulta_proveedores.resources
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Ventas_Conta.resources
+E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.FormAñadirInventarios.resources
+E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.FormAñadirProducto.resources
+E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.FormEditarDatosProductos.resources
+E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.FormConsultarInventarios.resources
