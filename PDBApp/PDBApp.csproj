@@ -58,18 +58,6 @@
     <Compile Include="Consulta_proveedores.Designer.cs">
       <DependentUpon>Consulta_proveedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ingreso_Inventarios_Conta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ingreso_Inventarios_Conta.Designer.cs">
-      <DependentUpon>Ingreso_Inventarios_Conta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Libros_Conta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Libros_Conta.Designer.cs">
-      <DependentUpon>Libros_Conta.cs</DependentUpon>
-    </Compile>
     <Compile Include="Ventas_Conta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,12 +100,6 @@
     <Compile Include="FormRegistroClientes.Designer.cs">
       <DependentUpon>FormRegistroClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRegistroEmpleados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormRegistroEmpleados.Designer.cs">
-      <DependentUpon>FormRegistroEmpleados.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,12 +119,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consulta_proveedores.resx">
       <DependentUpon>Consulta_proveedores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ingreso_Inventarios_Conta.resx">
-      <DependentUpon>Ingreso_Inventarios_Conta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Libros_Conta.resx">
-      <DependentUpon>Libros_Conta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas_Conta.resx">
       <DependentUpon>Ventas_Conta.cs</DependentUpon>
@@ -164,9 +140,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistroClientes.resx">
       <DependentUpon>FormRegistroClientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormRegistroEmpleados.resx">
-      <DependentUpon>FormRegistroEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

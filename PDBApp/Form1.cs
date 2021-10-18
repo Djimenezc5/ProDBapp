@@ -105,12 +105,6 @@ namespace PDBApp
             //Agregamos nuestro x contenido, abrir un formulario, mostrar información, hacer una consulta etc.
             hideSubMenu();
         }
-        private void bttRE_Click(object sender, EventArgs e)
-        {
-            openChildForms(new FormRegistroEmpleados());
-            //Agregamos nuestro x contenido, abrir un formulario, mostrar información, hacer una consulta etc.
-            hideSubMenu();
-        }
         private void bttEDE_Click(object sender, EventArgs e)
         {
             openChildForms(new FormEditarDatosEmpleados());
@@ -129,6 +123,15 @@ namespace PDBApp
             openChildForms(new Ventas_Conta());
             //Agregamos nuestro x contenido, abrir un formulario, mostrar información, hacer una consulta etc.
             hideSubMenu();
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            hideSubMenu();
+        }
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
         #endregion
         #region Clientes
@@ -168,6 +171,11 @@ namespace PDBApp
             //Agregamos nuestro x contenido, abrir un formulario, mostrar información, hacer una consulta etc.
             hideSubMenu();
         }
+        private void button8_Click(object sender, EventArgs e)
+        {
+            openChildForms(new Actualizacion_proveedores());
+            hideSubMenu();
+        }
         #endregion
         #region Sucursal
         private void Sucursales_Click(object sender, EventArgs e)
@@ -183,23 +191,6 @@ namespace PDBApp
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            openChildForms(new Libros_Conta());
-            hideSubMenu();
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            openChildForms(new Actualizacion_proveedores());
-            hideSubMenu();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
         {
 
         }

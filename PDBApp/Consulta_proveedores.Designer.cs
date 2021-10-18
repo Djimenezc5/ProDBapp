@@ -45,11 +45,11 @@ namespace PDBApp
             this.bttContacto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttContacto.ForeColor = System.Drawing.Color.LightGray;
-            this.bttContacto.Location = new System.Drawing.Point(15, 426);
-            this.bttContacto.Margin = new System.Windows.Forms.Padding(4);
+            this.bttContacto.Location = new System.Drawing.Point(19, 370);
+            this.bttContacto.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bttContacto.Name = "bttContacto";
             this.bttContacto.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bttContacto.Size = new System.Drawing.Size(158, 47);
+            this.bttContacto.Size = new System.Drawing.Size(161, 58);
             this.bttContacto.TabIndex = 22;
             this.bttContacto.Text = "Contacto proveedores";
             this.bttContacto.UseVisualStyleBackColor = true;
@@ -60,7 +60,8 @@ namespace PDBApp
             this.labelDG.AutoSize = true;
             this.labelDG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDG.ForeColor = System.Drawing.Color.LightGray;
-            this.labelDG.Location = new System.Drawing.Point(11, 374);
+            this.labelDG.Location = new System.Drawing.Point(15, 331);
+            this.labelDG.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDG.Name = "labelDG";
             this.labelDG.Size = new System.Drawing.Size(303, 20);
             this.labelDG.TabIndex = 21;
@@ -72,7 +73,8 @@ namespace PDBApp
             this.labelCC.AutoSize = true;
             this.labelCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCC.ForeColor = System.Drawing.Color.LightGray;
-            this.labelCC.Location = new System.Drawing.Point(11, 350);
+            this.labelCC.Location = new System.Drawing.Point(15, 302);
+            this.labelCC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCC.Name = "labelCC";
             this.labelCC.Size = new System.Drawing.Size(358, 24);
             this.labelCC.TabIndex = 20;
@@ -84,14 +86,15 @@ namespace PDBApp
             this.bttClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(25)))), ((int)(((byte)(42)))));
             this.bttClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttClose.ForeColor = System.Drawing.Color.LightGray;
-            this.bttClose.Location = new System.Drawing.Point(589, 518);
-            this.bttClose.Margin = new System.Windows.Forms.Padding(4);
+            this.bttClose.Location = new System.Drawing.Point(557, 509);
+            this.bttClose.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bttClose.Name = "bttClose";
             this.bttClose.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bttClose.Size = new System.Drawing.Size(78, 30);
+            this.bttClose.Size = new System.Drawing.Size(104, 37);
             this.bttClose.TabIndex = 18;
             this.bttClose.Text = "Close";
             this.bttClose.UseVisualStyleBackColor = true;
+            this.bttClose.Click += new System.EventHandler(this.bttClose_Click);
             // 
             // dataGridView1
             // 
@@ -101,11 +104,11 @@ namespace PDBApp
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 12);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 15);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(658, 324);
+            this.dataGridView1.Size = new System.Drawing.Size(649, 270);
             this.dataGridView1.TabIndex = 17;
             // 
             // button1
@@ -115,18 +118,18 @@ namespace PDBApp
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(255, 426);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(200, 370);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(158, 47);
+            this.button1.Size = new System.Drawing.Size(193, 58);
             this.button1.TabIndex = 23;
             this.button1.Text = "Producto de cada proveedor";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // Consulta_proveedores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(684, 561);
@@ -136,7 +139,9 @@ namespace PDBApp
             this.Controls.Add(this.labelCC);
             this.Controls.Add(this.bttClose);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Consulta_proveedores";
             this.Text = "Consulta_proveedores";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

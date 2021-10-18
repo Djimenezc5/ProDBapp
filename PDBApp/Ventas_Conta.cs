@@ -21,5 +21,10 @@ namespace PDBApp
         {
 
         }
+
+        private void bttClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

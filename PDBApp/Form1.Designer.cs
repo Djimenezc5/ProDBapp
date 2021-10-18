@@ -48,7 +48,6 @@
             this.Contabilidad = new System.Windows.Forms.Button();
             this.panelEmpleados = new System.Windows.Forms.Panel();
             this.bttEDE = new System.Windows.Forms.Button();
-            this.bttRE = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Empleados = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
@@ -122,7 +121,7 @@
             this.Sucursales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(12)))), ((int)(((byte)(31)))));
             this.Sucursales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sucursales.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Sucursales.Location = new System.Drawing.Point(0, 684);
+            this.Sucursales.Location = new System.Drawing.Point(0, 657);
             this.Sucursales.Name = "Sucursales";
             this.Sucursales.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Sucursales.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -139,7 +138,7 @@
             this.panelProveedores.Controls.Add(this.button8);
             this.panelProveedores.Controls.Add(this.button4);
             this.panelProveedores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelProveedores.Location = new System.Drawing.Point(0, 606);
+            this.panelProveedores.Location = new System.Drawing.Point(0, 579);
             this.panelProveedores.Name = "panelProveedores";
             this.panelProveedores.Size = new System.Drawing.Size(233, 78);
             this.panelProveedores.TabIndex = 5;
@@ -185,7 +184,7 @@
             this.Proveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(12)))), ((int)(((byte)(31)))));
             this.Proveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Proveedores.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Proveedores.Location = new System.Drawing.Point(0, 561);
+            this.Proveedores.Location = new System.Drawing.Point(0, 534);
             this.Proveedores.Name = "Proveedores";
             this.Proveedores.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Proveedores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -203,7 +202,7 @@
             this.panelClientes.Controls.Add(this.bttRC);
             this.panelClientes.Controls.Add(this.button2);
             this.panelClientes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelClientes.Location = new System.Drawing.Point(0, 451);
+            this.panelClientes.Location = new System.Drawing.Point(0, 424);
             this.panelClientes.Name = "panelClientes";
             this.panelClientes.Size = new System.Drawing.Size(233, 110);
             this.panelClientes.TabIndex = 4;
@@ -266,7 +265,7 @@
             this.Clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(12)))), ((int)(((byte)(31)))));
             this.Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Clientes.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Clientes.Location = new System.Drawing.Point(0, 406);
+            this.Clientes.Location = new System.Drawing.Point(0, 379);
             this.Clientes.Name = "Clientes";
             this.Clientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Clientes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -285,7 +284,7 @@
             this.panelContabilidad.Controls.Add(this.button5);
             this.panelContabilidad.Controls.Add(this.btt_consulta);
             this.panelContabilidad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelContabilidad.Location = new System.Drawing.Point(0, 271);
+            this.panelContabilidad.Location = new System.Drawing.Point(0, 244);
             this.panelContabilidad.Name = "panelContabilidad";
             this.panelContabilidad.Size = new System.Drawing.Size(233, 135);
             this.panelContabilidad.TabIndex = 3;
@@ -302,7 +301,7 @@
             this.button7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button7.Size = new System.Drawing.Size(233, 31);
             this.button7.TabIndex = 3;
-            this.button7.Text = "Actualización de datos";
+            this.button7.Text = "Editar datos de productos";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button7.UseVisualStyleBackColor = true;
             // 
@@ -335,7 +334,7 @@
             this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button5.Size = new System.Drawing.Size(233, 43);
             this.button5.TabIndex = 1;
-            this.button5.Text = "Consultar libros de contabilidad";
+            this.button5.Text = "Ingresar en inventarios";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -364,13 +363,13 @@
             this.Contabilidad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(12)))), ((int)(((byte)(31)))));
             this.Contabilidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Contabilidad.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Contabilidad.Location = new System.Drawing.Point(0, 226);
+            this.Contabilidad.Location = new System.Drawing.Point(0, 199);
             this.Contabilidad.Name = "Contabilidad";
             this.Contabilidad.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Contabilidad.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Contabilidad.Size = new System.Drawing.Size(233, 45);
             this.Contabilidad.TabIndex = 3;
-            this.Contabilidad.Text = "Contabilidad";
+            this.Contabilidad.Text = "Ventas, Inventarios y Productos";
             this.Contabilidad.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Contabilidad.UseVisualStyleBackColor = true;
             this.Contabilidad.Click += new System.EventHandler(this.Contabilidad_Click);
@@ -379,12 +378,11 @@
             // 
             this.panelEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.panelEmpleados.Controls.Add(this.bttEDE);
-            this.panelEmpleados.Controls.Add(this.bttRE);
             this.panelEmpleados.Controls.Add(this.button1);
             this.panelEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelEmpleados.Location = new System.Drawing.Point(0, 116);
             this.panelEmpleados.Name = "panelEmpleados";
-            this.panelEmpleados.Size = new System.Drawing.Size(233, 110);
+            this.panelEmpleados.Size = new System.Drawing.Size(233, 83);
             this.panelEmpleados.TabIndex = 2;
             // 
             // bttEDE
@@ -393,7 +391,7 @@
             this.bttEDE.FlatAppearance.BorderSize = 0;
             this.bttEDE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
             this.bttEDE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttEDE.Location = new System.Drawing.Point(0, 79);
+            this.bttEDE.Location = new System.Drawing.Point(0, 47);
             this.bttEDE.Name = "bttEDE";
             this.bttEDE.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.bttEDE.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -403,23 +401,6 @@
             this.bttEDE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bttEDE.UseVisualStyleBackColor = true;
             this.bttEDE.Click += new System.EventHandler(this.bttEDE_Click);
-            // 
-            // bttRE
-            // 
-            this.bttRE.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bttRE.FlatAppearance.BorderSize = 0;
-            this.bttRE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
-            this.bttRE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttRE.Location = new System.Drawing.Point(0, 47);
-            this.bttRE.Name = "bttRE";
-            this.bttRE.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.bttRE.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bttRE.Size = new System.Drawing.Size(233, 32);
-            this.bttRE.TabIndex = 1;
-            this.bttRE.Text = "Registro de empleados";
-            this.bttRE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bttRE.UseVisualStyleBackColor = true;
-            this.bttRE.Click += new System.EventHandler(this.bttRE_Click);
             // 
             // button1
             // 
@@ -893,7 +874,6 @@
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button bttEDE;
-        private System.Windows.Forms.Button bttRE;
         private System.Windows.Forms.Button bttEDC;
         private System.Windows.Forms.Button bttRC;
         private System.Windows.Forms.Button button8;
