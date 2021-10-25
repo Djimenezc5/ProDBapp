@@ -44,7 +44,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.LightGray;
-            this.button2.Location = new System.Drawing.Point(294, 382);
+            this.button2.Location = new System.Drawing.Point(270, 410);
             this.button2.Margin = new System.Windows.Forms.Padding(5);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -52,6 +52,7 @@
             this.button2.TabIndex = 29;
             this.button2.Text = "Menor cantidad de productos";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -60,14 +61,15 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(456, 382);
+            this.button1.Location = new System.Drawing.Point(123, 410);
             this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(108, 57);
+            this.button1.Size = new System.Drawing.Size(137, 57);
             this.button1.TabIndex = 28;
-            this.button1.Text = "Existencia de inventarios";
+            this.button1.Text = "Mayor cantidad de productos";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btttop
             // 
@@ -76,14 +78,15 @@
             this.btttop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btttop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btttop.ForeColor = System.Drawing.Color.LightGray;
-            this.btttop.Location = new System.Drawing.Point(130, 382);
+            this.btttop.Location = new System.Drawing.Point(421, 410);
             this.btttop.Margin = new System.Windows.Forms.Padding(5);
             this.btttop.Name = "btttop";
             this.btttop.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btttop.Size = new System.Drawing.Size(144, 57);
+            this.btttop.Size = new System.Drawing.Size(171, 57);
             this.btttop.TabIndex = 27;
-            this.btttop.Text = "Mayor cantidad de productos";
+            this.btttop.Text = "Top de menores existencias en inventarios";
             this.btttop.UseVisualStyleBackColor = true;
+            this.btttop.Click += new System.EventHandler(this.btttop_Click);
             // 
             // labelCC
             // 
@@ -91,12 +94,12 @@
             this.labelCC.AutoSize = true;
             this.labelCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCC.ForeColor = System.Drawing.Color.LightGray;
-            this.labelCC.Location = new System.Drawing.Point(13, 323);
+            this.labelCC.Location = new System.Drawing.Point(13, 372);
             this.labelCC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCC.Name = "labelCC";
-            this.labelCC.Size = new System.Drawing.Size(307, 24);
+            this.labelCC.Size = new System.Drawing.Size(313, 24);
             this.labelCC.TabIndex = 25;
-            this.labelCC.Text = "Datos a consultar de inventarios";
+            this.labelCC.Text = "Datos a consultar de inventarios:";
             // 
             // bttClose
             // 
@@ -111,7 +114,7 @@
             this.bttClose.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bttClose.Size = new System.Drawing.Size(104, 37);
             this.bttClose.TabIndex = 24;
-            this.bttClose.Text = "Close";
+            this.bttClose.Text = "Cerrar";
             this.bttClose.UseVisualStyleBackColor = true;
             this.bttClose.Click += new System.EventHandler(this.bttClose_Click);
             // 
@@ -124,7 +127,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(14, 14);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(656, 295);
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(656, 353);
             this.dataGridView1.TabIndex = 23;
             // 
             // FormConsultarInventarios

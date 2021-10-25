@@ -42,9 +42,10 @@
             this.Clientes = new System.Windows.Forms.Button();
             this.panelContabilidad = new System.Windows.Forms.Panel();
             this.bttEditProd = new System.Windows.Forms.Button();
-            this.bttAñadirProd = new System.Windows.Forms.Button();
             this.bttIAñadirInven = new System.Windows.Forms.Button();
+            this.bttConsultaInventario = new System.Windows.Forms.Button();
             this.bttConsulta = new System.Windows.Forms.Button();
+            this.bttAñadirProd = new System.Windows.Forms.Button();
             this.Contabilidad = new System.Windows.Forms.Button();
             this.panelEmpleados = new System.Windows.Forms.Panel();
             this.bttEDE = new System.Windows.Forms.Button();
@@ -84,7 +85,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labeRE = new System.Windows.Forms.Label();
-            this.bttConsultaInventario = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelProveedores.SuspendLayout();
             this.panelClientes.SuspendLayout();
@@ -308,23 +308,6 @@
             this.bttEditProd.UseVisualStyleBackColor = true;
             this.bttEditProd.Click += new System.EventHandler(this.bttEditProd_Click);
             // 
-            // bttAñadirProd
-            // 
-            this.bttAñadirProd.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bttAñadirProd.FlatAppearance.BorderSize = 0;
-            this.bttAñadirProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
-            this.bttAñadirProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttAñadirProd.Location = new System.Drawing.Point(0, 0);
-            this.bttAñadirProd.Name = "bttAñadirProd";
-            this.bttAñadirProd.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.bttAñadirProd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bttAñadirProd.Size = new System.Drawing.Size(233, 31);
-            this.bttAñadirProd.TabIndex = 2;
-            this.bttAñadirProd.Text = "Añadir nuevo producto";
-            this.bttAñadirProd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bttAñadirProd.UseVisualStyleBackColor = true;
-            this.bttAñadirProd.Click += new System.EventHandler(this.button6_Click);
-            // 
             // bttIAñadirInven
             // 
             this.bttIAñadirInven.Dock = System.Windows.Forms.DockStyle.Top;
@@ -342,6 +325,23 @@
             this.bttIAñadirInven.UseVisualStyleBackColor = true;
             this.bttIAñadirInven.Click += new System.EventHandler(this.button5_Click);
             // 
+            // bttConsultaInventario
+            // 
+            this.bttConsultaInventario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bttConsultaInventario.FlatAppearance.BorderSize = 0;
+            this.bttConsultaInventario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.bttConsultaInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttConsultaInventario.Location = new System.Drawing.Point(0, 62);
+            this.bttConsultaInventario.Name = "bttConsultaInventario";
+            this.bttConsultaInventario.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.bttConsultaInventario.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bttConsultaInventario.Size = new System.Drawing.Size(233, 31);
+            this.bttConsultaInventario.TabIndex = 1;
+            this.bttConsultaInventario.Text = "Consulta inventarios";
+            this.bttConsultaInventario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bttConsultaInventario.UseVisualStyleBackColor = true;
+            this.bttConsultaInventario.Click += new System.EventHandler(this.bttConsultaInventario_Click);
+            // 
             // bttConsulta
             // 
             this.bttConsulta.Dock = System.Windows.Forms.DockStyle.Top;
@@ -358,6 +358,23 @@
             this.bttConsulta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bttConsulta.UseVisualStyleBackColor = true;
             this.bttConsulta.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // bttAñadirProd
+            // 
+            this.bttAñadirProd.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bttAñadirProd.FlatAppearance.BorderSize = 0;
+            this.bttAñadirProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.bttAñadirProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttAñadirProd.Location = new System.Drawing.Point(0, 0);
+            this.bttAñadirProd.Name = "bttAñadirProd";
+            this.bttAñadirProd.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.bttAñadirProd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bttAñadirProd.Size = new System.Drawing.Size(233, 31);
+            this.bttAñadirProd.TabIndex = 2;
+            this.bttAñadirProd.Text = "Añadir nuevo producto";
+            this.bttAñadirProd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bttAñadirProd.UseVisualStyleBackColor = true;
+            this.bttAñadirProd.Click += new System.EventHandler(this.button6_Click);
             // 
             // Contabilidad
             // 
@@ -494,8 +511,10 @@
             this.panelChildForm.Controls.Add(this.label1);
             this.panelChildForm.Controls.Add(this.labeRE);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.ForeColor = System.Drawing.Color.Black;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panelChildForm.Size = new System.Drawing.Size(684, 561);
             this.panelChildForm.TabIndex = 1;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
@@ -827,23 +846,6 @@
             this.labeRE.Size = new System.Drawing.Size(290, 25);
             this.labeRE.TabIndex = 51;
             this.labeRE.Text = "Registrar una nueva venta";
-            // 
-            // bttConsultaInventario
-            // 
-            this.bttConsultaInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bttConsultaInventario.FlatAppearance.BorderSize = 0;
-            this.bttConsultaInventario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
-            this.bttConsultaInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttConsultaInventario.Location = new System.Drawing.Point(0, 62);
-            this.bttConsultaInventario.Name = "bttConsultaInventario";
-            this.bttConsultaInventario.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.bttConsultaInventario.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bttConsultaInventario.Size = new System.Drawing.Size(233, 31);
-            this.bttConsultaInventario.TabIndex = 1;
-            this.bttConsultaInventario.Text = "Consulta inventarios";
-            this.bttConsultaInventario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bttConsultaInventario.UseVisualStyleBackColor = true;
-            this.bttConsultaInventario.Click += new System.EventHandler(this.bttConsultaInventario_Click);
             // 
             // Form1
             // 

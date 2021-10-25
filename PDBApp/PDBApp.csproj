@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,6 +53,15 @@
     <Compile Include="Actualizacion_proveedores.Designer.cs">
       <DependentUpon>Actualizacion_proveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\CLIENTES\Contactos_clientes.cs" />
+    <Compile Include="Clases\CLIENTES\Datos_clientes.cs" />
+    <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Clases\EMPLEADOS\Contacto_empleado.cs" />
+    <Compile Include="Clases\EMPLEADOS\Datos_empleado.cs" />
+    <Compile Include="Clases\PROVEEDORES\ContactoProveedores.cs" />
+    <Compile Include="Clases\PROVEEDORES\Datos_proveedores.cs" />
+    <Compile Include="Clases\PROVEEDORES\ProductoProveedor.cs" />
+    <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\Consultas inventarios.cs" />
     <Compile Include="Consulta_proveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,7 +216,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Clases\" />
+    <Folder Include="Clases\SUCURSALES\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

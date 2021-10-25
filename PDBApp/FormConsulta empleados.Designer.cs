@@ -53,6 +53,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(658, 324);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -68,7 +69,7 @@
             this.bttClose.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bttClose.Size = new System.Drawing.Size(78, 30);
             this.bttClose.TabIndex = 1;
-            this.bttClose.Text = "Close";
+            this.bttClose.Text = "Cerrar";
             this.bttClose.UseVisualStyleBackColor = true;
             this.bttClose.Click += new System.EventHandler(this.bttClose_Click);
             // 
@@ -86,6 +87,7 @@
             this.bttListaEmpleados.TabIndex = 2;
             this.bttListaEmpleados.Text = "Listar empleados";
             this.bttListaEmpleados.UseVisualStyleBackColor = true;
+            this.bttListaEmpleados.Click += new System.EventHandler(this.bttListaEmpleados_Click);
             // 
             // labelCE
             // 
@@ -140,6 +142,7 @@
             this.bttContacto.TabIndex = 6;
             this.bttContacto.Text = "Contacto empleados";
             this.bttContacto.UseVisualStyleBackColor = true;
+            this.bttContacto.Click += new System.EventHandler(this.bttContacto_Click);
             // 
             // label1
             // 
