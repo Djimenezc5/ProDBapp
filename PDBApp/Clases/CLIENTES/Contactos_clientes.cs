@@ -12,7 +12,6 @@ namespace PDBApp.Clases.CLIENTES
     class Contactos_clientes
     {
         Conexion cn = new Conexion();
-
         public DataTable MostrarContactos()
         {
             SqlDataAdapter da = new SqlDataAdapter("MOSTRARCONTACTOCLIENTES", cn.LeerCadena());

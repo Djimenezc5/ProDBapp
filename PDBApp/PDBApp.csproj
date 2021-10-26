@@ -58,6 +58,8 @@
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\EMPLEADOS\Contacto_empleado.cs" />
     <Compile Include="Clases\EMPLEADOS\Datos_empleado.cs" />
+    <Compile Include="Clases\InsertarDetalleFactura.cs" />
+    <Compile Include="Clases\InsertarFactura.cs" />
     <Compile Include="Clases\PROVEEDORES\ContactoProveedores.cs" />
     <Compile Include="Clases\PROVEEDORES\Datos_proveedores.cs" />
     <Compile Include="Clases\PROVEEDORES\ProductoProveedor.cs" />

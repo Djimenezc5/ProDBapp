@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PDBApp.Clases;
 
 namespace PDBApp
 {
@@ -26,17 +27,16 @@ namespace PDBApp
             panelProveedores.Visible = false;
             // Podemos agregar otras formas de personalizar el diseño
             tbIDfac.Enabled = false;
-            tbTF.Enabled = false;
             tbIDfacDet.Enabled = false;
+            tbPrecio.Enabled = false; 
             cbIDProd.Enabled = false;
             cbIDtipopago.Enabled = false;
             tbPrecio.Enabled = false;
-            tbSubtotal.Enabled = false;
-            tbIVA.Enabled = false;
-            tbTotal.Enabled = false;
-
+            bttAceptarD.Enabled = false;
+            bttNF.Enabled = false;
         }
-
+        InsertarFactura IF = new InsertarFactura();
+        InsertarDetalleFactura IDF = new InsertarDetalleFactura();
         private void hideSubMenu() 
         {
             if (panelClientes.Visible == true)
@@ -87,11 +87,19 @@ namespace PDBApp
         }
         private void bttAceptar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Encabezado creado");
-            tbIDfacDet.Enabled = true;
             cbIDProd.Enabled = true;
             cbIDtipopago.Enabled = true;
             tbPrecio.Enabled = true;
+            bttAceptarD.Enabled = true;
+            string id_fac = IF.Factura(cbSucursal.SelectedItem.ToString(), tbIDEmpleado.Text, tbIDCliente.Text, Convert.ToString(dateTimePicker1.Value), "0.00");
+            tbIDfac.Text = id_fac;        
+            tbIDfacDet.Text = id_fac;
+            MessageBox.Show("Encabezado creado");
+            cbSucursal.Enabled = false;
+            tbIDEmpleado.Enabled = false;
+            tbIDCliente.Enabled = false;
+            dateTimePicker1.Enabled = false;
+            bttAceptar.Enabled = false;
         }
         #region Empleados
         private void Empleados_Click(object sender, EventArgs e)
@@ -206,6 +214,49 @@ namespace PDBApp
 
         }
 
+        private void cbIDProd_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            string precio = IDF.Consulta_precio(cbIDProd.SelectedItem.ToString());
+            tbPrecio.Text = "";
+            tbPrecio.Text = precio.ToString();
+        }
 
+        private void bttAceptarD_Click(object sender, EventArgs e)
+        {
+            IDF.Detalle_Factura(tbIDfacDet.Text, cbIDProd.SelectedItem.ToString(), cbIDtipopago.SelectedItem.ToString(),tbCantidad.Text,tbPrecio.Text);
+            dataGridView1.DataSource = IDF.MostrarFactura(tbIDfacDet.Text);
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            cbIDProd.Text = "";
+            cbIDtipopago.Text = "";
+            tbCantidad.Text = "";
+            tbPrecio.Text = "";
+            bttNF.Enabled = true;
+        }
+
+        private void bttNF_Click(object sender, EventArgs e)
+        {
+            cbIDProd.Text = "";
+            cbIDtipopago.Text = "";
+            tbCantidad.Text = "";
+            tbPrecio.Text = "";
+            tbIDfac.Text = "";
+            tbIDfacDet.Text = "";
+            tbIDEmpleado.Text = "";
+            tbIDCliente.Text = "";
+            cbSucursal.Text = "";
+
+            cbSucursal.Enabled = true;
+            tbIDEmpleado.Enabled = true;
+            tbIDCliente.Enabled = true;
+            dateTimePicker1.Enabled = true;
+            bttAceptar.Enabled = true;
+   
+            cbIDProd.Enabled = false;
+            cbIDtipopago.Enabled = false;
+            bttAceptarD.Enabled = false;
+            bttNF.Enabled = false;
+
+            dataGridView1.Columns.Clear();
+        }
     }
 }
