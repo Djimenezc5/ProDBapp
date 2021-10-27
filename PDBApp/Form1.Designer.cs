@@ -54,6 +54,7 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.bttNF = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tbCantidad = new System.Windows.Forms.TextBox();
@@ -81,7 +82,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labeRE = new System.Windows.Forms.Label();
-            this.bttNF = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelProveedores.SuspendLayout();
             this.panelClientes.SuspendLayout();
@@ -514,6 +514,22 @@
             this.panelChildForm.TabIndex = 1;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
+            // bttNF
+            // 
+            this.bttNF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bttNF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(25)))), ((int)(((byte)(42)))));
+            this.bttNF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttNF.ForeColor = System.Drawing.Color.LightGray;
+            this.bttNF.Location = new System.Drawing.Point(527, 4);
+            this.bttNF.Margin = new System.Windows.Forms.Padding(4);
+            this.bttNF.Name = "bttNF";
+            this.bttNF.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bttNF.Size = new System.Drawing.Size(153, 30);
+            this.bttNF.TabIndex = 97;
+            this.bttNF.Text = "Nueva factura";
+            this.bttNF.UseVisualStyleBackColor = true;
+            this.bttNF.Click += new System.EventHandler(this.bttNF_Click);
+            // 
             // label11
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -830,22 +846,6 @@
             this.labeRE.Size = new System.Drawing.Size(290, 25);
             this.labeRE.TabIndex = 51;
             this.labeRE.Text = "Registrar una nueva venta";
-            // 
-            // bttNF
-            // 
-            this.bttNF.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bttNF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(25)))), ((int)(((byte)(42)))));
-            this.bttNF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttNF.ForeColor = System.Drawing.Color.LightGray;
-            this.bttNF.Location = new System.Drawing.Point(527, 4);
-            this.bttNF.Margin = new System.Windows.Forms.Padding(4);
-            this.bttNF.Name = "bttNF";
-            this.bttNF.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bttNF.Size = new System.Drawing.Size(153, 30);
-            this.bttNF.TabIndex = 97;
-            this.bttNF.Text = "Nueva factura";
-            this.bttNF.UseVisualStyleBackColor = true;
-            this.bttNF.Click += new System.EventHandler(this.bttNF_Click);
             // 
             // Form1
             // 

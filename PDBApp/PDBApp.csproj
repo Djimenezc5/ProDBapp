@@ -53,6 +53,7 @@
     <Compile Include="Actualizacion_proveedores.Designer.cs">
       <DependentUpon>Actualizacion_proveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\CLIENTES\AñadirCliente.cs" />
     <Compile Include="Clases\CLIENTES\Contactos_clientes.cs" />
     <Compile Include="Clases\CLIENTES\Datos_clientes.cs" />
     <Compile Include="Clases\Conexion.cs" />
@@ -63,7 +64,9 @@
     <Compile Include="Clases\PROVEEDORES\ContactoProveedores.cs" />
     <Compile Include="Clases\PROVEEDORES\Datos_proveedores.cs" />
     <Compile Include="Clases\PROVEEDORES\ProductoProveedor.cs" />
+    <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\AñadirProducto.cs" />
     <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\Consultas inventarios.cs" />
+    <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\LlenadoInventario.cs" />
     <Compile Include="Consulta_proveedores.cs">
       <SubType>Form</SubType>
     </Compile>
