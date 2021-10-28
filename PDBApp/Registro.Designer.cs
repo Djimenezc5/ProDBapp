@@ -32,6 +32,18 @@ namespace PDBApp
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -48,20 +60,15 @@ namespace PDBApp
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
@@ -72,13 +79,6 @@ namespace PDBApp
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -109,6 +109,119 @@ namespace PDBApp
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(503, 787);
             this.panel2.TabIndex = 0;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(205, 22);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(101, 102);
+            this.pictureBox9.TabIndex = 19;
+            this.pictureBox9.TabStop = false;
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox10.Location = new System.Drawing.Point(262, 148);
+            this.textBox10.Multiline = true;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(185, 41);
+            this.textBox10.TabIndex = 18;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox9.Location = new System.Drawing.Point(58, 148);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(185, 41);
+            this.textBox9.TabIndex = 17;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.pictureBox8);
+            this.panel10.Controls.Add(this.textBox8);
+            this.panel10.Location = new System.Drawing.Point(67, 350);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(354, 48);
+            this.panel10.TabIndex = 16;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(51, 48);
+            this.pictureBox8.TabIndex = 1;
+            this.pictureBox8.TabStop = false;
+            // 
+            // textBox8
+            // 
+            this.textBox8.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox8.Location = new System.Drawing.Point(57, 4);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(291, 41);
+            this.textBox8.TabIndex = 0;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.pictureBox7);
+            this.panel9.Controls.Add(this.textBox7);
+            this.panel9.Location = new System.Drawing.Point(67, 286);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(354, 48);
+            this.panel9.TabIndex = 15;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(51, 48);
+            this.pictureBox7.TabIndex = 1;
+            this.pictureBox7.TabStop = false;
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox7.Location = new System.Drawing.Point(57, 4);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(291, 41);
+            this.textBox7.TabIndex = 0;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.pictureBox6);
+            this.panel8.Controls.Add(this.textBox6);
+            this.panel8.Location = new System.Drawing.Point(67, 668);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(354, 48);
+            this.panel8.TabIndex = 14;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(51, 48);
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox6.Location = new System.Drawing.Point(57, 4);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(291, 41);
+            this.textBox6.TabIndex = 0;
             // 
             // panel4
             // 
@@ -183,6 +296,7 @@ namespace PDBApp
             this.pictureBox5.Size = new System.Drawing.Size(51, 48);
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // textBox5
             // 
@@ -264,119 +378,6 @@ namespace PDBApp
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.pictureBox6);
-            this.panel8.Controls.Add(this.textBox6);
-            this.panel8.Location = new System.Drawing.Point(67, 668);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(354, 48);
-            this.panel8.TabIndex = 14;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(51, 48);
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(57, 4);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(291, 41);
-            this.textBox6.TabIndex = 0;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.pictureBox7);
-            this.panel9.Controls.Add(this.textBox7);
-            this.panel9.Location = new System.Drawing.Point(67, 286);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(354, 48);
-            this.panel9.TabIndex = 15;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(51, 48);
-            this.pictureBox7.TabIndex = 1;
-            this.pictureBox7.TabStop = false;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Location = new System.Drawing.Point(57, 4);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(291, 41);
-            this.textBox7.TabIndex = 0;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.pictureBox8);
-            this.panel10.Controls.Add(this.textBox8);
-            this.panel10.Location = new System.Drawing.Point(67, 350);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(354, 48);
-            this.panel10.TabIndex = 16;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(51, 48);
-            this.pictureBox8.TabIndex = 1;
-            this.pictureBox8.TabStop = false;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Location = new System.Drawing.Point(57, 4);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(291, 41);
-            this.textBox8.TabIndex = 0;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Location = new System.Drawing.Point(58, 148);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(185, 41);
-            this.textBox9.TabIndex = 17;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Location = new System.Drawing.Point(262, 148);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(185, 41);
-            this.textBox10.TabIndex = 18;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(205, 22);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(101, 102);
-            this.pictureBox9.TabIndex = 19;
-            this.pictureBox9.TabStop = false;
-            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -390,6 +391,16 @@ namespace PDBApp
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -405,16 +416,6 @@ namespace PDBApp
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
