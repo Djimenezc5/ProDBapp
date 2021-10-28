@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PDBApp.Clases.EMPLEADOS;
 
 namespace PDBApp
 {
@@ -15,11 +16,23 @@ namespace PDBApp
         public FormEditarDatosEmpleados()
         {
             InitializeComponent();
+            tbUsuario.Enabled = false;
         }
-
+        EditarDatosEmpleado ede = new EditarDatosEmpleado();
         private void bttClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void bttAceptar_Click(object sender, EventArgs e)
+        {
+            ede.EdicionEmpleados(textBox2.Text, tbNombre.Text, tbApellidos.Text, tbTelCelular.Text, tbTelResidencial.Text, cbDep.SelectedItem.ToString(), tbDirRes.Text, textBox1.Text, tbUsuario.Text, tbContraseña.Text,tbPuesto.Text, "1");
+            MessageBox.Show("Gestion realizada");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            tbUsuario.Text = textBox1.Text;
         }
     }
 }

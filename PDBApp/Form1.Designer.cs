@@ -512,7 +512,6 @@
             this.panelChildForm.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panelChildForm.Size = new System.Drawing.Size(684, 561);
             this.panelChildForm.TabIndex = 1;
-            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
             // bttNF
             // 
@@ -861,7 +860,6 @@
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.panelProveedores.ResumeLayout(false);
             this.panelClientes.ResumeLayout(false);

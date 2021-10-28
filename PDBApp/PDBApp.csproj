@@ -56,16 +56,20 @@
     <Compile Include="Clases\CLIENTES\AñadirCliente.cs" />
     <Compile Include="Clases\CLIENTES\Contactos_clientes.cs" />
     <Compile Include="Clases\CLIENTES\Datos_clientes.cs" />
+    <Compile Include="Clases\CLIENTES\EditarClientes.cs" />
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\EMPLEADOS\Contacto_empleado.cs" />
     <Compile Include="Clases\EMPLEADOS\Datos_empleado.cs" />
+    <Compile Include="Clases\EMPLEADOS\EditarDatosEmpleado.cs" />
     <Compile Include="Clases\InsertarDetalleFactura.cs" />
     <Compile Include="Clases\InsertarFactura.cs" />
     <Compile Include="Clases\PROVEEDORES\ContactoProveedores.cs" />
     <Compile Include="Clases\PROVEEDORES\Datos_proveedores.cs" />
+    <Compile Include="Clases\PROVEEDORES\EditarProveedor.cs" />
     <Compile Include="Clases\PROVEEDORES\ProductoProveedor.cs" />
     <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\AñadirProducto.cs" />
     <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\Consultas inventarios.cs" />
+    <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\EdicionProducto.cs" />
     <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\LlenadoInventario.cs" />
     <Compile Include="Consulta_proveedores.cs">
       <SubType>Form</SubType>

@@ -204,16 +204,6 @@ namespace PDBApp
         }
         #endregion
 
-        private void panelChildForm_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void cbIDProd_SelectionChangeCommitted(object sender, EventArgs e)
         {
             string precio = IDF.Consulta_precio(cbIDProd.SelectedItem.ToString());

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.bttClose = new System.Windows.Forms.Button();
-            this.tbPuesto = new System.Windows.Forms.TextBox();
+            this.tbCorreo = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.cbDep = new System.Windows.Forms.ComboBox();
             this.tbNIT = new System.Windows.Forms.TextBox();
@@ -66,13 +66,13 @@
             this.bttClose.UseVisualStyleBackColor = true;
             this.bttClose.Click += new System.EventHandler(this.bttClose_Click);
             // 
-            // tbPuesto
+            // tbCorreo
             // 
-            this.tbPuesto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tbPuesto.Location = new System.Drawing.Point(340, 354);
-            this.tbPuesto.Name = "tbPuesto";
-            this.tbPuesto.Size = new System.Drawing.Size(229, 23);
-            this.tbPuesto.TabIndex = 89;
+            this.tbCorreo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbCorreo.Location = new System.Drawing.Point(340, 354);
+            this.tbCorreo.Name = "tbCorreo";
+            this.tbCorreo.Size = new System.Drawing.Size(229, 23);
+            this.tbCorreo.TabIndex = 89;
             // 
             // label12
             // 
@@ -151,7 +151,7 @@
             // 
             // bttAceptar
             // 
-            this.bttAceptar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bttAceptar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.bttAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(25)))), ((int)(((byte)(42)))));
             this.bttAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttAceptar.ForeColor = System.Drawing.Color.LightGray;
@@ -278,7 +278,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(684, 561);
             this.Controls.Add(this.bttClose);
-            this.Controls.Add(this.tbPuesto);
+            this.Controls.Add(this.tbCorreo);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.cbDep);
             this.Controls.Add(this.tbNIT);
@@ -310,7 +310,7 @@
         #endregion
 
         private System.Windows.Forms.Button bttClose;
-        private System.Windows.Forms.TextBox tbPuesto;
+        private System.Windows.Forms.TextBox tbCorreo;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox cbDep;
         private System.Windows.Forms.TextBox tbNIT;

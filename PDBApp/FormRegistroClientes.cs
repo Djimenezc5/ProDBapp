@@ -25,7 +25,7 @@ namespace PDBApp
 
         private void bttAceptar_Click(object sender, EventArgs e)
         {
-            AC.RegistroCliente(tbNombre.Text, tbApellidos.Text, tbTelCelular.Text, tbTelResidencial.Text, cbDep.SelectedItem.ToString(), tbDirRes.Text, tbPuesto.Text, tbNIT.Text);
+            AC.RegistroCliente(tbNombre.Text, tbApellidos.Text, tbTelCelular.Text, tbTelResidencial.Text, cbDep.SelectedItem.ToString(), tbDirRes.Text, tbCorreo.Text, tbNIT.Text);
             MessageBox.Show("Registro Realizado");
         }
     }
