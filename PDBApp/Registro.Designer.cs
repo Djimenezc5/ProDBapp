@@ -129,6 +129,8 @@ namespace PDBApp
             this.textApellido.Name = "textApellido";
             this.textApellido.Size = new System.Drawing.Size(185, 41);
             this.textApellido.TabIndex = 18;
+            this.textApellido.Enter += new System.EventHandler(this.textApellido_Enter);
+            this.textApellido.Leave += new System.EventHandler(this.textApellido_Leave);
             // 
             // textNombre
             // 
@@ -139,6 +141,8 @@ namespace PDBApp
             this.textNombre.Name = "textNombre";
             this.textNombre.Size = new System.Drawing.Size(185, 41);
             this.textNombre.TabIndex = 17;
+            this.textNombre.Enter += new System.EventHandler(this.textNombre_Enter);
+            this.textNombre.Leave += new System.EventHandler(this.textNombre_Leave);
             // 
             // panel10
             // 
@@ -167,6 +171,8 @@ namespace PDBApp
             this.textDireccion.Name = "textDireccion";
             this.textDireccion.Size = new System.Drawing.Size(291, 41);
             this.textDireccion.TabIndex = 0;
+            this.textDireccion.Enter += new System.EventHandler(this.textDireccion_Enter);
+            this.textDireccion.Leave += new System.EventHandler(this.textDireccion_Leave);
             // 
             // panel9
             // 
@@ -195,6 +201,8 @@ namespace PDBApp
             this.textTelefono_casa.Name = "textTelefono_casa";
             this.textTelefono_casa.Size = new System.Drawing.Size(291, 41);
             this.textTelefono_casa.TabIndex = 0;
+            this.textTelefono_casa.Enter += new System.EventHandler(this.textTelefono_casa_Enter);
+            this.textTelefono_casa.Leave += new System.EventHandler(this.textTelefono_casa_Leave);
             // 
             // panel8
             // 
@@ -223,6 +231,8 @@ namespace PDBApp
             this.textPuesto.Name = "textPuesto";
             this.textPuesto.Size = new System.Drawing.Size(291, 41);
             this.textPuesto.TabIndex = 0;
+            this.textPuesto.Enter += new System.EventHandler(this.textPuesto_Enter);
+            this.textPuesto.Leave += new System.EventHandler(this.textPuesto_Leave);
             // 
             // panel4
             // 
@@ -251,6 +261,8 @@ namespace PDBApp
             this.textContraseña.Name = "textContraseña";
             this.textContraseña.Size = new System.Drawing.Size(291, 41);
             this.textContraseña.TabIndex = 0;
+            this.textContraseña.Enter += new System.EventHandler(this.textContraseña_Enter);
+            this.textContraseña.Leave += new System.EventHandler(this.textContraseña_Leave);
             // 
             // panel3
             // 
@@ -279,6 +291,8 @@ namespace PDBApp
             this.textConfirm_contra.Name = "textConfirm_contra";
             this.textConfirm_contra.Size = new System.Drawing.Size(291, 41);
             this.textConfirm_contra.TabIndex = 0;
+            this.textConfirm_contra.Enter += new System.EventHandler(this.textConfirm_contra_Enter);
+            this.textConfirm_contra.Leave += new System.EventHandler(this.textConfirm_contra_Leave);
             // 
             // panel7
             // 
@@ -308,6 +322,8 @@ namespace PDBApp
             this.textDepartamento.Name = "textDepartamento";
             this.textDepartamento.Size = new System.Drawing.Size(291, 41);
             this.textDepartamento.TabIndex = 0;
+            this.textDepartamento.Enter += new System.EventHandler(this.textDepartamento_Enter);
+            this.textDepartamento.Leave += new System.EventHandler(this.textDepartamento_Leave);
             // 
             // panel6
             // 
@@ -336,6 +352,8 @@ namespace PDBApp
             this.textCelular.Name = "textCelular";
             this.textCelular.Size = new System.Drawing.Size(291, 41);
             this.textCelular.TabIndex = 0;
+            this.textCelular.Enter += new System.EventHandler(this.textCelular_Enter);
+            this.textCelular.Leave += new System.EventHandler(this.textCelular_Leave);
             // 
             // panel5
             // 
@@ -364,6 +382,9 @@ namespace PDBApp
             this.textCorreo.Name = "textCorreo";
             this.textCorreo.Size = new System.Drawing.Size(291, 41);
             this.textCorreo.TabIndex = 0;
+            this.textCorreo.TextChanged += new System.EventHandler(this.textCorreo_TextChanged);
+            this.textCorreo.Enter += new System.EventHandler(this.textCorreo_Enter);
+            this.textCorreo.Leave += new System.EventHandler(this.textCorreo_Leave);
             // 
             // button1
             // 
