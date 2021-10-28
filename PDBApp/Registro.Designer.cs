@@ -32,36 +32,43 @@ namespace PDBApp
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.textApellido = new System.Windows.Forms.TextBox();
+            this.textNombre = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.textDireccion = new System.Windows.Forms.TextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.textTelefono_casa = new System.Windows.Forms.TextBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.textPuesto = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.textContraseña = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textConfirm_contra = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.textDepartamento = new System.Windows.Forms.TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.textCelular = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textCorreo = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
@@ -72,13 +79,6 @@ namespace PDBApp
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -94,8 +94,8 @@ namespace PDBApp
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.Controls.Add(this.pictureBox9);
-            this.panel2.Controls.Add(this.textBox10);
-            this.panel2.Controls.Add(this.textBox9);
+            this.panel2.Controls.Add(this.textApellido);
+            this.panel2.Controls.Add(this.textNombre);
             this.panel2.Controls.Add(this.panel10);
             this.panel2.Controls.Add(this.panel9);
             this.panel2.Controls.Add(this.panel8);
@@ -109,11 +109,135 @@ namespace PDBApp
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(503, 787);
             this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(205, 22);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(101, 102);
+            this.pictureBox9.TabIndex = 19;
+            this.pictureBox9.TabStop = false;
+            // 
+            // textApellido
+            // 
+            this.textApellido.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textApellido.Location = new System.Drawing.Point(262, 148);
+            this.textApellido.Multiline = true;
+            this.textApellido.Name = "textApellido";
+            this.textApellido.Size = new System.Drawing.Size(185, 41);
+            this.textApellido.TabIndex = 18;
+            this.textApellido.Enter += new System.EventHandler(this.textApellido_Enter);
+            this.textApellido.Leave += new System.EventHandler(this.textApellido_Leave);
+            // 
+            // textNombre
+            // 
+            this.textNombre.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textNombre.Location = new System.Drawing.Point(58, 148);
+            this.textNombre.Multiline = true;
+            this.textNombre.Name = "textNombre";
+            this.textNombre.Size = new System.Drawing.Size(185, 41);
+            this.textNombre.TabIndex = 17;
+            this.textNombre.Enter += new System.EventHandler(this.textNombre_Enter);
+            this.textNombre.Leave += new System.EventHandler(this.textNombre_Leave);
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.pictureBox8);
+            this.panel10.Controls.Add(this.textDireccion);
+            this.panel10.Location = new System.Drawing.Point(67, 350);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(354, 48);
+            this.panel10.TabIndex = 16;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(51, 48);
+            this.pictureBox8.TabIndex = 1;
+            this.pictureBox8.TabStop = false;
+            // 
+            // textDireccion
+            // 
+            this.textDireccion.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textDireccion.Location = new System.Drawing.Point(57, 4);
+            this.textDireccion.Multiline = true;
+            this.textDireccion.Name = "textDireccion";
+            this.textDireccion.Size = new System.Drawing.Size(291, 41);
+            this.textDireccion.TabIndex = 0;
+            this.textDireccion.Enter += new System.EventHandler(this.textDireccion_Enter);
+            this.textDireccion.Leave += new System.EventHandler(this.textDireccion_Leave);
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.pictureBox7);
+            this.panel9.Controls.Add(this.textTelefono_casa);
+            this.panel9.Location = new System.Drawing.Point(67, 286);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(354, 48);
+            this.panel9.TabIndex = 15;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(51, 48);
+            this.pictureBox7.TabIndex = 1;
+            this.pictureBox7.TabStop = false;
+            // 
+            // textTelefono_casa
+            // 
+            this.textTelefono_casa.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textTelefono_casa.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textTelefono_casa.Location = new System.Drawing.Point(57, 4);
+            this.textTelefono_casa.Multiline = true;
+            this.textTelefono_casa.Name = "textTelefono_casa";
+            this.textTelefono_casa.Size = new System.Drawing.Size(291, 41);
+            this.textTelefono_casa.TabIndex = 0;
+            this.textTelefono_casa.Enter += new System.EventHandler(this.textTelefono_casa_Enter);
+            this.textTelefono_casa.Leave += new System.EventHandler(this.textTelefono_casa_Leave);
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.pictureBox6);
+            this.panel8.Controls.Add(this.textPuesto);
+            this.panel8.Location = new System.Drawing.Point(67, 668);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(354, 48);
+            this.panel8.TabIndex = 14;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(51, 48);
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            // 
+            // textPuesto
+            // 
+            this.textPuesto.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textPuesto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textPuesto.Location = new System.Drawing.Point(57, 4);
+            this.textPuesto.Multiline = true;
+            this.textPuesto.Name = "textPuesto";
+            this.textPuesto.Size = new System.Drawing.Size(291, 41);
+            this.textPuesto.TabIndex = 0;
+            this.textPuesto.Enter += new System.EventHandler(this.textPuesto_Enter);
+            this.textPuesto.Leave += new System.EventHandler(this.textPuesto_Leave);
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Controls.Add(this.textContraseña);
             this.panel4.Location = new System.Drawing.Point(67, 541);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(354, 48);
@@ -128,20 +252,22 @@ namespace PDBApp
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             // 
-            // textBox2
+            // textContraseña
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(57, 4);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(291, 41);
-            this.textBox2.TabIndex = 0;
+            this.textContraseña.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textContraseña.Location = new System.Drawing.Point(57, 4);
+            this.textContraseña.Multiline = true;
+            this.textContraseña.Name = "textContraseña";
+            this.textContraseña.Size = new System.Drawing.Size(291, 41);
+            this.textContraseña.TabIndex = 0;
+            this.textContraseña.Enter += new System.EventHandler(this.textContraseña_Enter);
+            this.textContraseña.Leave += new System.EventHandler(this.textContraseña_Leave);
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.textConfirm_contra);
             this.panel3.Location = new System.Drawing.Point(67, 605);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(354, 48);
@@ -156,20 +282,22 @@ namespace PDBApp
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // textBox1
+            // textConfirm_contra
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(57, 4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(291, 41);
-            this.textBox1.TabIndex = 0;
+            this.textConfirm_contra.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textConfirm_contra.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textConfirm_contra.Location = new System.Drawing.Point(57, 4);
+            this.textConfirm_contra.Multiline = true;
+            this.textConfirm_contra.Name = "textConfirm_contra";
+            this.textConfirm_contra.Size = new System.Drawing.Size(291, 41);
+            this.textConfirm_contra.TabIndex = 0;
+            this.textConfirm_contra.Enter += new System.EventHandler(this.textConfirm_contra_Enter);
+            this.textConfirm_contra.Leave += new System.EventHandler(this.textConfirm_contra_Leave);
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.pictureBox5);
-            this.panel7.Controls.Add(this.textBox5);
+            this.panel7.Controls.Add(this.textDepartamento);
             this.panel7.Location = new System.Drawing.Point(67, 478);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(354, 48);
@@ -183,21 +311,24 @@ namespace PDBApp
             this.pictureBox5.Size = new System.Drawing.Size(51, 48);
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // textBox5
+            // textDepartamento
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(57, 4);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(291, 41);
-            this.textBox5.TabIndex = 0;
+            this.textDepartamento.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textDepartamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textDepartamento.Location = new System.Drawing.Point(57, 4);
+            this.textDepartamento.Multiline = true;
+            this.textDepartamento.Name = "textDepartamento";
+            this.textDepartamento.Size = new System.Drawing.Size(291, 41);
+            this.textDepartamento.TabIndex = 0;
+            this.textDepartamento.Enter += new System.EventHandler(this.textDepartamento_Enter);
+            this.textDepartamento.Leave += new System.EventHandler(this.textDepartamento_Leave);
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.pictureBox4);
-            this.panel6.Controls.Add(this.textBox4);
+            this.panel6.Controls.Add(this.textCelular);
             this.panel6.Location = new System.Drawing.Point(67, 215);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(354, 48);
@@ -212,20 +343,22 @@ namespace PDBApp
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
             // 
-            // textBox4
+            // textCelular
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(57, 4);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(291, 41);
-            this.textBox4.TabIndex = 0;
+            this.textCelular.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textCelular.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textCelular.Location = new System.Drawing.Point(57, 4);
+            this.textCelular.Multiline = true;
+            this.textCelular.Name = "textCelular";
+            this.textCelular.Size = new System.Drawing.Size(291, 41);
+            this.textCelular.TabIndex = 0;
+            this.textCelular.Enter += new System.EventHandler(this.textCelular_Enter);
+            this.textCelular.Leave += new System.EventHandler(this.textCelular_Leave);
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.pictureBox1);
-            this.panel5.Controls.Add(this.textBox3);
+            this.panel5.Controls.Add(this.textCorreo);
             this.panel5.Location = new System.Drawing.Point(67, 413);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(354, 48);
@@ -240,15 +373,18 @@ namespace PDBApp
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox3
+            // textCorreo
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(57, 4);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(291, 41);
-            this.textBox3.TabIndex = 0;
+            this.textCorreo.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textCorreo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textCorreo.Location = new System.Drawing.Point(57, 4);
+            this.textCorreo.Multiline = true;
+            this.textCorreo.Name = "textCorreo";
+            this.textCorreo.Size = new System.Drawing.Size(291, 41);
+            this.textCorreo.TabIndex = 0;
+            this.textCorreo.TextChanged += new System.EventHandler(this.textCorreo_TextChanged);
+            this.textCorreo.Enter += new System.EventHandler(this.textCorreo_Enter);
+            this.textCorreo.Leave += new System.EventHandler(this.textCorreo_Leave);
             // 
             // button1
             // 
@@ -264,119 +400,6 @@ namespace PDBApp
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.pictureBox6);
-            this.panel8.Controls.Add(this.textBox6);
-            this.panel8.Location = new System.Drawing.Point(67, 668);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(354, 48);
-            this.panel8.TabIndex = 14;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(51, 48);
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(57, 4);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(291, 41);
-            this.textBox6.TabIndex = 0;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.pictureBox7);
-            this.panel9.Controls.Add(this.textBox7);
-            this.panel9.Location = new System.Drawing.Point(67, 286);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(354, 48);
-            this.panel9.TabIndex = 15;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(51, 48);
-            this.pictureBox7.TabIndex = 1;
-            this.pictureBox7.TabStop = false;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Location = new System.Drawing.Point(57, 4);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(291, 41);
-            this.textBox7.TabIndex = 0;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.pictureBox8);
-            this.panel10.Controls.Add(this.textBox8);
-            this.panel10.Location = new System.Drawing.Point(67, 350);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(354, 48);
-            this.panel10.TabIndex = 16;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(51, 48);
-            this.pictureBox8.TabIndex = 1;
-            this.pictureBox8.TabStop = false;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Location = new System.Drawing.Point(57, 4);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(291, 41);
-            this.textBox8.TabIndex = 0;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Location = new System.Drawing.Point(58, 148);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(185, 41);
-            this.textBox9.TabIndex = 17;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Location = new System.Drawing.Point(262, 148);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(185, 41);
-            this.textBox10.TabIndex = 18;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(205, 22);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(101, 102);
-            this.pictureBox9.TabIndex = 19;
-            this.pictureBox9.TabStop = false;
-            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,9 +410,20 @@ namespace PDBApp
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Registro";
             this.Text = "Registro";
+            this.Load += new System.EventHandler(this.Registro_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -405,16 +439,6 @@ namespace PDBApp
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -425,31 +449,31 @@ namespace PDBApp
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textContraseña;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textConfirm_contra;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textDepartamento;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textCelular;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textCorreo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textTelefono_casa;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textPuesto;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textApellido;
+        private System.Windows.Forms.TextBox textNombre;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textDireccion;
     }
 }
