@@ -113,8 +113,9 @@
             this.bttVentasEmpleados.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bttVentasEmpleados.Size = new System.Drawing.Size(149, 46);
             this.bttVentasEmpleados.TabIndex = 4;
-            this.bttVentasEmpleados.Text = "Lista ventas de empleados";
+            this.bttVentasEmpleados.Text = "Lista de ventas empleados";
             this.bttVentasEmpleados.UseVisualStyleBackColor = true;
+            this.bttVentasEmpleados.Click += new System.EventHandler(this.bttVentasEmpleados_Click);
             // 
             // labelDG
             // 
@@ -134,11 +135,11 @@
             this.bttContacto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(25)))), ((int)(((byte)(42)))));
             this.bttContacto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttContacto.ForeColor = System.Drawing.Color.LightGray;
-            this.bttContacto.Location = new System.Drawing.Point(154, 403);
+            this.bttContacto.Location = new System.Drawing.Point(150, 403);
             this.bttContacto.Margin = new System.Windows.Forms.Padding(4);
             this.bttContacto.Name = "bttContacto";
             this.bttContacto.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bttContacto.Size = new System.Drawing.Size(130, 30);
+            this.bttContacto.Size = new System.Drawing.Size(83, 30);
             this.bttContacto.TabIndex = 6;
             this.bttContacto.Text = "Contacto empleados";
             this.bttContacto.UseVisualStyleBackColor = true;
@@ -162,14 +163,15 @@
             this.btttop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(25)))), ((int)(((byte)(42)))));
             this.btttop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btttop.ForeColor = System.Drawing.Color.LightGray;
-            this.btttop.Location = new System.Drawing.Point(179, 474);
+            this.btttop.Location = new System.Drawing.Point(170, 474);
             this.btttop.Margin = new System.Windows.Forms.Padding(4);
             this.btttop.Name = "btttop";
             this.btttop.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btttop.Size = new System.Drawing.Size(170, 46);
             this.btttop.TabIndex = 8;
-            this.btttop.Text = "Top 10 ventas de los empleados";
+            this.btttop.Text = "Top 10 empleados con más ventas";
             this.btttop.UseVisualStyleBackColor = true;
+            this.btttop.Click += new System.EventHandler(this.btttop_Click);
             // 
             // button1
             // 
@@ -177,14 +179,15 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(25)))), ((int)(((byte)(42)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(365, 474);
+            this.button1.Location = new System.Drawing.Point(348, 474);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button1.Size = new System.Drawing.Size(170, 46);
             this.button1.TabIndex = 9;
-            this.button1.Text = "Top 10 menores ventas de los empleados";
+            this.button1.Text = "Top 10 empleados con menos ventas";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormConsulta_empleados
             // 

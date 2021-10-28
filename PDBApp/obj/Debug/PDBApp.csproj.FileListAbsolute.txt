@@ -41,3 +41,4 @@ E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.Registro.resources
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.csproj.GenerateResource.cache
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.exe
 E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.pdb
+E:\Proyectos\C#\PDBApp\PDBApp\obj\Debug\PDBApp.FormConsultaSucursal.resources

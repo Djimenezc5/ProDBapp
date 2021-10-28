@@ -199,6 +199,7 @@ namespace PDBApp
         #region Sucursal
         private void Sucursales_Click(object sender, EventArgs e)
         {
+            openChildForms(new FormConsultaSucursal());
             //Agregamos nuestro x contenido, abrir un formulario, mostrar información, hacer una consulta etc.
             hideSubMenu();
         }

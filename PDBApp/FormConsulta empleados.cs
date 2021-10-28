@@ -24,6 +24,9 @@ namespace PDBApp
 
         Datos_empleado de = new Datos_empleado();
         Contacto_empleado ce = new Contacto_empleado();
+        Ventasempleados ve = new Ventasempleados();
+        TopMasVentas tmv = new TopMasVentas();
+        TopMenosVentas tmmv = new TopMenosVentas();
 
         private void bttListaEmpleados_Click(object sender, EventArgs e)
         {
@@ -36,6 +39,27 @@ namespace PDBApp
         {
             dataGridView1.Columns.Clear();
             dataGridView1.DataSource = ce.ContactoEmpleados();
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+        }
+
+        private void bttVentasEmpleados_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Columns.Clear();
+            dataGridView1.DataSource = ve.VentasEmpleados();
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+        }
+
+        private void btttop_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Columns.Clear();
+            dataGridView1.DataSource = tmv.TopMasVentasEm();
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Columns.Clear();
+            dataGridView1.DataSource = tmmv.TopMenosVentasEm();
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
         }
     }

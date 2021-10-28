@@ -61,12 +61,19 @@
     <Compile Include="Clases\EMPLEADOS\Contacto_empleado.cs" />
     <Compile Include="Clases\EMPLEADOS\Datos_empleado.cs" />
     <Compile Include="Clases\EMPLEADOS\EditarDatosEmpleado.cs" />
+    <Compile Include="Clases\EMPLEADOS\TopMasVentas.cs" />
+    <Compile Include="Clases\EMPLEADOS\TopMenosVentas.cs" />
+    <Compile Include="Clases\EMPLEADOS\Ventasempleados.cs" />
     <Compile Include="Clases\InsertarDetalleFactura.cs" />
     <Compile Include="Clases\InsertarFactura.cs" />
     <Compile Include="Clases\PROVEEDORES\ContactoProveedores.cs" />
     <Compile Include="Clases\PROVEEDORES\Datos_proveedores.cs" />
     <Compile Include="Clases\PROVEEDORES\EditarProveedor.cs" />
     <Compile Include="Clases\PROVEEDORES\ProductoProveedor.cs" />
+    <Compile Include="Clases\SUCURSALES\ConsultarContactoSucursal.cs" />
+    <Compile Include="Clases\SUCURSALES\ConsultaSucursal.cs" />
+    <Compile Include="Clases\SUCURSALES\Masventas.cs" />
+    <Compile Include="Clases\SUCURSALES\Menosventas.cs" />
     <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\AñadirProducto.cs" />
     <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\Consultas inventarios.cs" />
     <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\EdicionProducto.cs" />
@@ -94,6 +101,12 @@
     </Compile>
     <Compile Include="FormConsultarInventarios.Designer.cs">
       <DependentUpon>FormConsultarInventarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaSucursal.Designer.cs">
+      <DependentUpon>FormConsultaSucursal.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEditarDatosProductos.cs">
       <SubType>Form</SubType>
@@ -172,6 +185,9 @@
     <EmbeddedResource Include="FormConsultarInventarios.resx">
       <DependentUpon>FormConsultarInventarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaSucursal.resx">
+      <DependentUpon>FormConsultaSucursal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEditarDatosProductos.resx">
       <DependentUpon>FormEditarDatosProductos.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,8 +240,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Clases\SUCURSALES\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
