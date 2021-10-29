@@ -61,6 +61,7 @@ namespace PDBApp
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.label3);
@@ -106,11 +107,12 @@ namespace PDBApp
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(112, 345);
+            this.label3.Location = new System.Drawing.Point(135, 347);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(254, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "¿No tienes cuenta? Registrate";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // button1
             // 
@@ -119,7 +121,7 @@ namespace PDBApp
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(164, 269);
+            this.button1.Location = new System.Drawing.Point(188, 267);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 34);
             this.button1.TabIndex = 6;

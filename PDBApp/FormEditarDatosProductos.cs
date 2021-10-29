@@ -27,6 +27,12 @@ namespace PDBApp
         {
             ep.EditProd(cbIDprod.SelectedItem.ToString(), cbIDproveedo.SelectedItem.ToString(), tbPrecio.Text, tbNombre.Text, tbDescProd.Text, cbEstatus.Text);
             MessageBox.Show("Gestion realizada");
+            cbIDprod.Text = "";
+            cbIDproveedo.Text = "";
+            tbPrecio.Text = "";
+            tbNombre.Text = "";
+            tbDescProd.Text = "";
+            cbEstatus.Text = "";
         }
     }
 }

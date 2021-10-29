@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PDBApp.Clases;
 
 namespace PDBApp
 {
@@ -27,6 +28,7 @@ namespace PDBApp
         {
             InitializeComponent();
         }
+        NuevoEmpleado ne = new NuevoEmpleado();
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
@@ -55,7 +57,7 @@ namespace PDBApp
             textDireccion.Text = "Introduzca Direccion";
             textDireccion.ForeColor = Color.White;
 
-            textCorreo.Text = "Introduzca Correo electronico";
+            textCorreo.Text = "Introduzca Correo electronico (Tambien sera su usuario)";
             textCorreo.ForeColor = Color.White;
 
             textDepartamento.Text = "Introduzca Id Departamento";
@@ -231,16 +233,16 @@ namespace PDBApp
         private void textCorreo_Leave(object sender, EventArgs e)
         {
             Correo = textCorreo.Text;
-            if (Correo.Equals("Introduzca Correo Electronico"))
+            if (Correo.Equals("Introduzca Correo Electronico (Tambien sera su usuario)"))
             {
-                textCorreo.Text = "Introduzca Correo Electronico";
+                textCorreo.Text = "Introduzca Correo Electronico (Tambien sera su usuario)";
                 textCorreo.ForeColor = Color.White;
             }
             else
             {
                 if (Correo.Equals(""))
                 {
-                    textCorreo.Text = "Introduzca Correo Electronico";
+                    textCorreo.Text = "Introduzca Correo Electronico (Tambien sera su usuario)";
                     textCorreo.ForeColor = Color.White;
                 }
                 else
@@ -364,6 +366,25 @@ namespace PDBApp
                     textPuesto.Text = Puesto;
                     textPuesto.ForeColor = Color.Black;
                 }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string con = "";
+            if (textContraseña.Text == textConfirm_contra.Text)
+            {
+                con = textContraseña.Text;
+                ne.EdicionEmpleados(textNombre.Text, textApellido.Text, textCelular.Text, textTelefono_casa.Text, textDepartamento.Text, textDireccion.Text, textCorreo.Text, textCorreo.Text, con, textPuesto.Text, "1");
+                Form1 f1 = new Form1();
+                this.Hide();
+                f1.Show();
+            }
+            else
+            {
+                MessageBox.Show("La contraseña no coincide");
+                textContraseña.ForeColor = Color.Red;
+                textConfirm_contra.ForeColor = Color.Red;
             }
         }
     }

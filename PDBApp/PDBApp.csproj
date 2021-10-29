@@ -66,6 +66,7 @@
     <Compile Include="Clases\EMPLEADOS\Ventasempleados.cs" />
     <Compile Include="Clases\InsertarDetalleFactura.cs" />
     <Compile Include="Clases\InsertarFactura.cs" />
+    <Compile Include="Clases\NuevoEmpleado.cs" />
     <Compile Include="Clases\PROVEEDORES\ContactoProveedores.cs" />
     <Compile Include="Clases\PROVEEDORES\Datos_proveedores.cs" />
     <Compile Include="Clases\PROVEEDORES\EditarProveedor.cs" />
@@ -74,10 +75,13 @@
     <Compile Include="Clases\SUCURSALES\ConsultaSucursal.cs" />
     <Compile Include="Clases\SUCURSALES\Masventas.cs" />
     <Compile Include="Clases\SUCURSALES\Menosventas.cs" />
+    <Compile Include="Clases\Usuarioycontraseña.cs" />
     <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\AñadirProducto.cs" />
     <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\Consultas inventarios.cs" />
     <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\EdicionProducto.cs" />
     <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\LlenadoInventario.cs" />
+    <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\Ventasxproducto.cs" />
+    <Compile Include="Clases\VENTAS, INVENTARIOS Y PRODUCTOS\Ventasxtiempo.cs" />
     <Compile Include="Consulta_proveedores.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PDBApp.Clases;
 
 namespace PDBApp
 {
@@ -20,7 +21,7 @@ namespace PDBApp
         {
             InitializeComponent();
         }
-
+        Usuarioycontraseña uc = new Usuarioycontraseña();
         private void Form1_Load(object sender, EventArgs e)
         {
             textUser.Text = "introduzca el usuario";
@@ -116,7 +117,26 @@ namespace PDBApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Form1 f = new Form1();
+            string flag = uc.UsuarioyContraseña(textUser.Text, textPass.Text);
+            if (flag == "1")
+            {
+                f.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("El usuario o contraseña son incorrectas");
+                textUser.Text = "";
+                textPass.Text = "";
+            }
+        }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Registro r = new Registro();
+            r.Show();
+            this.Hide();
         }
     }
 }

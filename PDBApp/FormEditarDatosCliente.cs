@@ -27,6 +27,15 @@ namespace PDBApp
         {
             ec.EdicionCliente(textBox1.Text,tbNombre.Text, tbApellidos.Text, tbTelCelular.Text, tbTelResidencial.Text, cbDep.SelectedItem.ToString(), tbDirRes.Text, tbCorreo.Text, tbNIT.Text);
             MessageBox.Show("Registro Realizado");
+            textBox1.Text = "";
+            tbNombre.Text = "";
+            tbApellidos.Text = "";
+            tbTelCelular.Text = "";
+            tbTelResidencial.Text = "";
+            cbDep.Text = "";
+            tbDirRes.Text = "";
+            tbCorreo.Text = "";
+            tbNIT.Text = "";
         }
     }
 }

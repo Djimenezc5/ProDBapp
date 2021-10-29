@@ -27,6 +27,9 @@ namespace PDBApp
         {
             LI.LlenadoInven(textBox1.Text,comboBox1.SelectedItem.ToString(), dateTimePicker1.Value.ToString(), tbCantidad.Text);
             MessageBox.Show("Asignación realizada");
+            textBox1.Text = "";
+            comboBox1.Text = "";
+            tbCantidad.Text = "";
         }
     }
 }

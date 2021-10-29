@@ -28,6 +28,17 @@ namespace PDBApp
         {
             ede.EdicionEmpleados(textBox2.Text, tbNombre.Text, tbApellidos.Text, tbTelCelular.Text, tbTelResidencial.Text, cbDep.SelectedItem.ToString(), tbDirRes.Text, textBox1.Text, tbUsuario.Text, tbContraseña.Text,tbPuesto.Text, "1");
             MessageBox.Show("Gestion realizada");
+            textBox2.Text = "";
+            tbNombre.Text = "";
+            tbApellidos.Text = "";
+            tbTelCelular.Text = "";
+            tbTelResidencial.Text = "";
+            cbDep.Text = "";
+            tbDirRes.Text = "";
+            textBox1.Text = "";
+            tbUsuario.Text = "";
+            tbContraseña.Text = "";
+            tbPuesto.Text = "";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

@@ -79,11 +79,11 @@
             this.bttClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(25)))), ((int)(((byte)(42)))));
             this.bttClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttClose.ForeColor = System.Drawing.Color.LightGray;
-            this.bttClose.Location = new System.Drawing.Point(593, 518);
+            this.bttClose.Location = new System.Drawing.Point(611, 518);
             this.bttClose.Margin = new System.Windows.Forms.Padding(4);
             this.bttClose.Name = "bttClose";
             this.bttClose.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bttClose.Size = new System.Drawing.Size(78, 30);
+            this.bttClose.Size = new System.Drawing.Size(60, 30);
             this.bttClose.TabIndex = 108;
             this.bttClose.Text = "Cerrar";
             this.bttClose.UseVisualStyleBackColor = true;

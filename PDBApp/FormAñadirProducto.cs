@@ -27,6 +27,12 @@ namespace PDBApp
         {
             AP.LlenadoProducto(textBox1.Text, cbIDproveedo.SelectedItem.ToString(), textBox2.Text, tbNombre.Text, tbDescProd.Text, cbEstatus.SelectedItem.ToString());
             MessageBox.Show("Asignación realizada");
+            textBox1.Text = "";
+            cbIDproveedo.Text = "";
+            textBox2.Text = "";
+            tbNombre.Text = "";
+            tbDescProd.Text = "";
+            cbEstatus.Text = "";
         }
     }
 }

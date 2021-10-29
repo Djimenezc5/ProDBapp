@@ -27,6 +27,14 @@ namespace PDBApp
         {
             AC.RegistroCliente(tbNombre.Text, tbApellidos.Text, tbTelCelular.Text, tbTelResidencial.Text, cbDep.SelectedItem.ToString(), tbDirRes.Text, tbCorreo.Text, tbNIT.Text);
             MessageBox.Show("Registro Realizado");
+            tbNombre.Text = "";
+            tbApellidos.Text = "";
+            tbTelCelular.Text = "";
+            tbTelResidencial.Text = "";
+            cbDep.Text = "";
+            tbDirRes.Text = "";
+            tbCorreo.Text = "";
+            tbNIT.Text = "";
         }
     }
 }
